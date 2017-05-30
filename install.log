@@ -1,0 +1,295 @@
+
+2016-09-20 15:47:01...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:47:05...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:47:09...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:47:20...Begin System Check Process *************
+2016-09-20 15:47:20...XML Parsing Support Found
+2016-09-20 15:47:20...MBString Support Found
+2016-09-20 15:47:20...ZIP Support Found
+2016-09-20 15:47:20.../custom directory and subdirectory check passed
+2016-09-20 15:47:20...cache directory and subdirectory check passed
+2016-09-20 15:47:21.../module  directory and subdirectory check passed
+2016-09-20 15:47:21.../upload directory check passed
+2016-09-20 15:47:21.../zip check passed
+2016-09-20 15:47:21...PCRE version check passed
+2016-09-20 15:47:21...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:47:21...php.ini location found. C:\wamp2\bin\apache\apache2.4.9\bin\php.ini
+2016-09-20 15:47:21...Outputting HTML for System check
+2016-09-20 15:47:21...No Errors were found *************
+2016-09-20 15:47:23...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:47:29...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:47:31...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:47:52...Begin DB Check Process *************
+2016-09-20 15:47:52...testing with mysql:mysqli
+2016-09-20 15:47:52...Basic form info is valid, continuing Process.
+2016-09-20 15:47:52...Testing user account...
+2016-09-20 15:47:52...ERROR::  The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:47:52...Testing priviliged account...
+2016-09-20 15:47:52...Connection made using  host: localhost, usr: admin
+2016-09-20 15:47:52...DB not selected, will create crm2
+2016-09-20 15:47:52...ERROR:: Unable to check database version.
+2016-09-20 15:47:52...FATAL:: errors have been detected!  User will not be allowed to continue.  Errors are as follow:
+2016-09-20 15:47:52..... The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:47:52..... Unable to check database version.
+2016-09-20 15:47:52...End DB Check Process *************
+2016-09-20 15:48:03...Begin DB Check Process *************
+2016-09-20 15:48:03...testing with mysql:mysqli
+2016-09-20 15:48:03...Basic form info is valid, continuing Process.
+2016-09-20 15:48:03...Testing user account...
+2016-09-20 15:48:03...ERROR::  The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:48:03...Testing priviliged account...
+2016-09-20 15:48:03...Connection made using  host: localhost, usr: admin
+2016-09-20 15:48:03...DB not selected, will create crm2
+2016-09-20 15:48:03...ERROR:: Unable to check database version.
+2016-09-20 15:48:03...FATAL:: errors have been detected!  User will not be allowed to continue.  Errors are as follow:
+2016-09-20 15:48:03..... The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:48:03..... Unable to check database version.
+2016-09-20 15:48:03...End DB Check Process *************
+2016-09-20 15:48:17...Begin DB Check Process *************
+2016-09-20 15:48:17...testing with mysql:mysqli
+2016-09-20 15:48:17...Basic form info is valid, continuing Process.
+2016-09-20 15:48:17...Testing user account...
+2016-09-20 15:48:18...ERROR::  The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:48:18...Testing priviliged account...
+2016-09-20 15:48:18...Connection made using  host: www.ivema.es, usr: admin
+2016-09-20 15:48:18...DB not selected, will create crm2
+2016-09-20 15:48:18...ERROR:: Unable to check database version.
+2016-09-20 15:48:18...FATAL:: errors have been detected!  User will not be allowed to continue.  Errors are as follow:
+2016-09-20 15:48:18..... The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:48:18..... Unable to check database version.
+2016-09-20 15:48:18...End DB Check Process *************
+2016-09-20 15:48:45...Begin DB Check Process *************
+2016-09-20 15:48:45...testing with mysql:mysqli
+2016-09-20 15:48:45...Basic form info is valid, continuing Process.
+2016-09-20 15:48:45...Testing user account...
+2016-09-20 15:48:46...ERROR::  The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:48:46...Testing priviliged account...
+2016-09-20 15:48:46...Connection made using  host: www.ivema.es, usr: admin
+2016-09-20 15:48:46...DB not selected, will create crm2
+2016-09-20 15:48:46...ERROR:: Unable to check database version.
+2016-09-20 15:48:46...FATAL:: errors have been detected!  User will not be allowed to continue.  Errors are as follow:
+2016-09-20 15:48:46..... The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:48:46..... Unable to check database version.
+2016-09-20 15:48:46...End DB Check Process *************
+2016-09-20 15:48:53...Begin DB Check Process *************
+2016-09-20 15:48:53...testing with mysql:mysqli
+2016-09-20 15:48:53...Basic form info is valid, continuing Process.
+2016-09-20 15:48:53...Testing user account...
+2016-09-20 15:48:54...ERROR::  The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:48:54...Testing priviliged account...
+2016-09-20 15:48:54...Connection made using  host: www.ivema.es, usr: admin
+2016-09-20 15:48:54...DB not selected, will create crm2
+2016-09-20 15:48:54...ERROR:: Unable to check database version.
+2016-09-20 15:48:54...FATAL:: errors have been detected!  User will not be allowed to continue.  Errors are as follow:
+2016-09-20 15:48:54..... The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:48:54..... Unable to check database version.
+2016-09-20 15:48:54...End DB Check Process *************
+2016-09-20 15:49:14...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:49:18...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:49:24...Begin DB Check Process *************
+2016-09-20 15:49:24...testing with mysql:mysqli
+2016-09-20 15:49:24...Basic form info is valid, continuing Process.
+2016-09-20 15:49:24...Testing user account...
+2016-09-20 15:49:25...ERROR::  The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:49:25...Testing priviliged account...
+2016-09-20 15:49:25...Connection made using  host: www.ivema.es, usr: admin
+2016-09-20 15:49:25...DB not selected, will create crm2
+2016-09-20 15:49:25...ERROR:: Unable to check database version.
+2016-09-20 15:49:25...FATAL:: errors have been detected!  User will not be allowed to continue.  Errors are as follow:
+2016-09-20 15:49:25..... The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:49:25..... Unable to check database version.
+2016-09-20 15:49:25...End DB Check Process *************
+2016-09-20 15:49:48...Begin DB Check Process *************
+2016-09-20 15:49:48...testing with mysql:mysqli
+2016-09-20 15:49:48...Basic form info is valid, continuing Process.
+2016-09-20 15:49:48...Testing user account...
+2016-09-20 15:49:48...ERROR::  The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:49:48...Testing priviliged account...
+2016-09-20 15:49:48...Connection made using  host: localhost, usr: admin
+2016-09-20 15:49:48...DB not selected, will create crm2
+2016-09-20 15:49:48...ERROR:: Unable to check database version.
+2016-09-20 15:49:48...FATAL:: errors have been detected!  User will not be allowed to continue.  Errors are as follow:
+2016-09-20 15:49:48..... The provided database host, username, and/or password is invalid, and a connection to the database could not be established.  Please enter a valid host, username and password
+2016-09-20 15:49:48..... Unable to check database version.
+2016-09-20 15:49:48...End DB Check Process *************
+2016-09-20 15:50:16...Begin DB Check Process *************
+2016-09-20 15:50:16...testing with mysql:mysqli
+2016-09-20 15:50:16...Basic form info is valid, continuing Process.
+2016-09-20 15:50:16...Testing user account...
+2016-09-20 15:50:16...Connection made using  host: localhost, usr: root
+2016-09-20 15:50:16...Testing priviliged account...
+2016-09-20 15:50:16...Connection made using  host: localhost, usr: root
+2016-09-20 15:50:16...DB not selected, will create crm2
+2016-09-20 15:50:16...Passed DB install check
+2016-09-20 15:50:16...SUCCESS:: no errors detected!
+2016-09-20 15:50:16...End DB Check Process *************
+2016-09-20 15:50:17...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:50:34...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:50:50...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:51:02...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:51:02...calling handleSugarConfig()
+2016-09-20 15:51:02...calling handleLog4Php()
+2016-09-20 15:51:02...calling handleHtaccess()
+2016-09-20 15:51:02...calling handleDbCreateDatabase()
+2016-09-20 15:51:02...looping through all the Beans and create their tables
+2016-09-20 15:51:02...processing table acl_actions
+2016-09-20 15:51:03...creating table acl_actions
+2016-09-20 15:51:03...creating Relationship Meta for ACLAction
+2016-09-20 15:51:03...processing table acl_roles
+2016-09-20 15:51:03...creating table acl_roles
+2016-09-20 15:51:03...creating Relationship Meta for ACLRole
+2016-09-20 15:51:03...processing table relationships
+2016-09-20 15:51:04...creating table relationships
+2016-09-20 15:51:04...creating Relationship Meta for Relationship
+2016-09-20 15:51:04...processing table leads
+2016-09-20 15:51:06...creating table leads
+2016-09-20 15:51:06...creating Relationship Meta for Lead
+2016-09-20 15:51:07...processing table cases
+2016-09-20 15:51:08...creating table cases
+2016-09-20 15:51:08...creating Relationship Meta for Case
+2016-09-20 15:51:09...processing table bugs
+2016-09-20 15:51:11...creating table bugs
+2016-09-20 15:51:11...creating Relationship Meta for Bug
+2016-09-20 15:51:12...processing table users
+2016-09-20 15:51:13...creating table users
+2016-09-20 15:51:13...creating Relationship Meta for User
+2016-09-20 15:51:13...processing table campaign_log
+2016-09-20 15:51:15...creating table campaign_log
+2016-09-20 15:51:15...creating Relationship Meta for CampaignLog
+2016-09-20 15:51:15...processing table project
+2016-09-20 15:51:19...creating table project
+2016-09-20 15:51:19...creating Relationship Meta for Project
+2016-09-20 15:51:20...processing table project_task
+2016-09-20 15:51:22...creating table project_task
+2016-09-20 15:51:22...creating Relationship Meta for ProjectTask
+2016-09-20 15:51:22...processing table campaigns
+2016-09-20 15:51:23...creating table campaigns
+2016-09-20 15:51:23...creating Relationship Meta for Campaign
+2016-09-20 15:51:24...processing table prospect_lists
+2016-09-20 15:51:26...creating table prospect_lists
+2016-09-20 15:51:26...creating Relationship Meta for ProspectList
+2016-09-20 15:51:26...processing table prospects
+2016-09-20 15:51:27...creating table prospects
+2016-09-20 15:51:27...creating Relationship Meta for Prospect
+2016-09-20 15:51:28...processing table email_marketing
+2016-09-20 15:51:29...creating table email_marketing
+2016-09-20 15:51:29...creating Relationship Meta for EmailMarketing
+2016-09-20 15:51:29...processing table campaign_trkrs
+2016-09-20 15:51:30...creating table campaign_trkrs
+2016-09-20 15:51:30...creating Relationship Meta for CampaignTracker
+2016-09-20 15:51:30...processing table releases
+2016-09-20 15:51:31...creating table releases
+2016-09-20 15:51:31...creating Relationship Meta for Release
+2016-09-20 15:51:31...processing table emailman
+2016-09-20 15:51:31...creating table emailman
+2016-09-20 15:51:31...creating Relationship Meta for EmailMan
+2016-09-20 15:51:31...processing table schedulers
+2016-09-20 15:51:32...creating table schedulers
+2016-09-20 15:51:32...creating Relationship Meta for Scheduler
+2016-09-20 15:51:32...processing table job_queue
+2016-09-20 15:51:33...creating table job_queue
+2016-09-20 15:51:33...creating Relationship Meta for SchedulersJob
+2016-09-20 15:51:33...processing table contacts
+2016-09-20 15:51:34...creating table contacts
+2016-09-20 15:51:34...creating Relationship Meta for Contact
+2016-09-20 15:51:35...processing table accounts
+2016-09-20 15:51:36...creating table accounts
+2016-09-20 15:51:36...creating Relationship Meta for Account
+2016-09-20 15:51:37...processing table opportunities
+2016-09-20 15:51:38...creating table opportunities
+2016-09-20 15:51:38...creating Relationship Meta for Opportunity
+2016-09-20 15:51:38...processing table email_templates
+2016-09-20 15:51:39...creating table email_templates
+2016-09-20 15:51:39...creating Relationship Meta for EmailTemplate
+2016-09-20 15:51:39...processing table notes
+2016-09-20 15:51:40...creating table notes
+2016-09-20 15:51:40...creating Relationship Meta for Note
+2016-09-20 15:51:40...processing table calls
+2016-09-20 15:51:42...creating table calls
+2016-09-20 15:51:42...creating Relationship Meta for Call
+2016-09-20 15:51:42...processing table emails
+2016-09-20 15:51:43...creating table emails
+2016-09-20 15:51:43...creating Relationship Meta for Email
+2016-09-20 15:51:43...processing table meetings
+2016-09-20 15:51:44...creating table meetings
+2016-09-20 15:51:44...creating Relationship Meta for Meeting
+2016-09-20 15:51:45...processing table tasks
+2016-09-20 15:51:46...creating table tasks
+2016-09-20 15:51:46...creating Relationship Meta for Task
+2016-09-20 15:51:46...processing table users
+2016-09-20 15:51:46...processing table users
+2016-09-20 15:51:46...processing table currencies
+2016-09-20 15:51:46...creating table currencies
+2016-09-20 15:51:46...creating Relationship Meta for Currency
+2016-09-20 15:51:46...processing table tracker
+2016-09-20 15:51:47...creating table tracker
+2016-09-20 15:51:47...creating Relationship Meta for Tracker
+2016-09-20 15:51:47...processing table import_maps
+2016-09-20 15:51:47...creating table import_maps
+2016-09-20 15:51:47...creating Relationship Meta for ImportMap
+2016-09-20 15:51:47...processing table users_last_import
+2016-09-20 15:51:48...creating table users_last_import
+2016-09-20 15:51:48...creating Relationship Meta for UsersLastImport
+2016-09-20 15:51:48...processing table config
+2016-09-20 15:51:48...creating table config
+2016-09-20 15:51:48...creating Relationship Meta for Administration
+2016-09-20 15:51:48...processing table upgrade_history
+2016-09-20 15:51:48...creating table upgrade_history
+2016-09-20 15:51:48...creating Relationship Meta for UpgradeHistory
+2016-09-20 15:51:48...processing table vcals
+2016-09-20 15:51:49...creating table vcals
+2016-09-20 15:51:49...creating Relationship Meta for vCal
+2016-09-20 15:51:49...processing table versions
+2016-09-20 15:51:49...creating table versions
+2016-09-20 15:51:49...creating Relationship Meta for Version
+2016-09-20 15:51:49...processing table roles
+2016-09-20 15:51:50...creating table roles
+2016-09-20 15:51:50...creating Relationship Meta for Role
+2016-09-20 15:51:50...processing table documents
+2016-09-20 15:51:50...creating table documents
+2016-09-20 15:51:50...creating Relationship Meta for Document
+2016-09-20 15:51:50...processing table document_revisions
+2016-09-20 15:51:51...creating table document_revisions
+2016-09-20 15:51:51...creating Relationship Meta for DocumentRevision
+2016-09-20 15:51:51...processing table fields_meta_data
+2016-09-20 15:51:52...creating table fields_meta_data
+2016-09-20 15:51:52...creating Relationship Meta for FieldsMetaData
+2016-09-20 15:51:52...processing table inbound_email
+2016-09-20 15:51:52...creating table inbound_email
+2016-09-20 15:51:52...creating Relationship Meta for InboundEmail
+2016-09-20 15:51:52...processing table saved_search
+2016-09-20 15:51:52...creating table saved_search
+2016-09-20 15:51:52...creating Relationship Meta for SavedSearch
+2016-09-20 15:51:52...processing table user_preferences
+2016-09-20 15:51:53...creating table user_preferences
+2016-09-20 15:51:53...creating Relationship Meta for UserPreference
+2016-09-20 15:51:53...processing table 
+2016-09-20 15:51:53...processing table email_addresses
+2016-09-20 15:51:53...creating table email_addresses
+2016-09-20 15:51:53...creating Relationship Meta for EmailAddress
+2016-09-20 15:51:53...processing table emails_text
+2016-09-20 15:51:53...creating table emails_text
+2016-09-20 15:51:53...creating Relationship Meta for EmailText
+2016-09-20 15:51:53...processing table sugarfeed
+2016-09-20 15:51:54...creating table sugarfeed
+2016-09-20 15:51:54...creating Relationship Meta for SugarFeed
+2016-09-20 15:51:54...processing table eapm
+2016-09-20 15:51:55...creating table eapm
+2016-09-20 15:51:55...creating Relationship Meta for EAPM
+2016-09-20 15:51:55...processing table oauth_consumer
+2016-09-20 15:51:56...creating table oauth_consumer
+2016-09-20 15:51:56...creating Relationship Meta for OAuthKey
+2016-09-20 15:51:56...processing table oauth_tokens
+2016-09-20 15:51:56...creating table oauth_tokens
+2016-09-20 15:51:56...creating Relationship Meta for OAuthToken
+2016-09-20 15:52:38...Begin creating Defaults
+2016-09-20 15:52:38...insert defaults into config table
+2016-09-20 15:52:39...Creating default users
+2016-09-20 15:52:39...Creating default scheduler jobs
+2016-09-20 15:52:40...Enable SugarFeeds
+2016-09-20 15:52:40...Enable InsideView Connector
+2016-09-20 15:52:40...Creating FTS logic hook
+2016-09-20 15:52:40...populating the db with seed data
+2016-09-20 15:52:41...Installation has completed *********
+2016-09-20 15:53:25...installerHook: Could not find custom/install/install_hooks.php
+2016-09-20 15:53:50...installerHook: Could not find custom/install/install_hooks.php

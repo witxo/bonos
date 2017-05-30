@@ -1,0 +1,11 @@
+<?php /***CONFIGURATOR***/ $sugar_config['default_currency_iso4217'] = 'EUR'; $sugar_config['default_currency_symbol'] = '€'; $sugar_config['default_date_format'] = 
+'d/m/Y'; $sugar_config['default_decimal_seperator'] = ','; $sugar_config['default_number_grouping_seperator'] = '.'; $sugar_config['default_time_format'] = 'H:i'; 
+$sugar_config['disabled_languages'] = 'en_us'; $sugar_config['default_currency_name'] = 'Euro'; $sugar_config['default_language'] = 'es_ES'; $sugar_config['email_xss'] = 
+'YToxMzp7czo2OiJhcHBsZXQiO3M6NjoiYXBwbGV0IjtzOjQ6ImJhc2UiO3M6NDoiYmFzZSI7czo1OiJlbWJlZCI7czo1OiJlbWJlZCI7czo0OiJmb3JtIjtzOjQ6ImZvcm0iO3M6NToiZnJhbWUiO3M6NToiZnJhbWUiO3M6ODoiZnJhbWVzZXQiO3M6ODoiZnJhbWVzZXQiO3M6NjoiaWZyYW1lIjtzOjY6ImlmcmFtZSI7czo2OiJpbXBvcnQiO3M6ODoiXD9pbXBvcnQiO3M6NToibGF5ZXIiO3M6NToibGF5ZXIiO3M6NDoibGluayI7czo0OiJsaW5rIjtzOjY6Im9iamVjdCI7czo2OiJvYmplY3QiO3M6MzoieG1wIjtzOjM6InhtcCI7czo2OiJzY3JpcHQiO3M6Njoic2NyaXB0Ijt9'; 
+$sugar_config['fact_person_type_code'] = 'J'; /***CONFIGURATOR***/ $sugar_config['fact_corporate_name'] = 'IVEMA Enseñanza S.L.'; 
+$sugar_config['fact_trade_name_surname1'] = 'IVEMA Enseñanza'; $sugar_config['fact_registration_surname2'] = 'Tomo 28093, Libro 0, Folio 51, Seccion 8, Hoja M 506205'; 
+$sugar_config['fact_tax_number'] = 'B86016797'; $sugar_config['fact_residence_type_code'] = 'R'; $sugar_config['fact_address'] = 'C/ Cuevas de Altamira nº1 Local 9'; 
+$sugar_config['fact_post_code'] = '28054'; $sugar_config['fact_town'] = 'Madrid'; $sugar_config['fact_province'] = 'Madrid'; $sugar_config['fact_account_nif_field'] = 
+'cif_c'; $sugar_config['fact_default_tax_type'] = '01'; $sugar_config['fact_default_tax'] = '21'; $sugar_config['fact_default_retention'] = ''; 
+$sugar_config['fact_restart_number'] = true; $sugar_config['fact_path_to_logo'] = '';
+$sugar_config['fact_conditions'] = '';

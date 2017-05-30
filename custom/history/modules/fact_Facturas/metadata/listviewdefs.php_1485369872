@@ -1,0 +1,141 @@
+<?php
+$module_name = 'fact_Facturas';
+$OBJECT_NAME = 'FACT_FACTURAS';
+$listViewDefs [$module_name] = 
+array (
+  'NUMERO' => 
+  array (
+    'width' => '1%',
+    'label' => 'LBL_NUMERO_LIST',
+    'default' => true,
+    'related_fields' => 
+    array (
+      0 => 'year',
+    ),
+    'type' => 'NumFactura',
+  ),
+  'FACT_FACTURAS_TYPE' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_TYPE',
+    'default' => true,
+  ),
+  'ACCOUNTS_FACT_FACTURAS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => 'accounts_fact_facturas',
+    'label' => 'LBL_ACCOUNT',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'NAME' => 
+  array (
+    'width' => '30%',
+    'label' => 'LBL_LIST_SALE_NAME',
+    'link' => true,
+    'default' => true,
+  ),
+  'AMOUNT' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_AMOUNT',
+    'currency_format' => true,
+    'default' => true,
+  ),
+  'TOTAL_IVA' => 
+  array (
+    'type' => 'float',
+    'default' => true,
+    'label' => 'LBL_TOTAL_IVA',
+    'width' => '10%',
+  ),
+  'ESTADO' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_ESTADO',
+    'default' => true,
+  ),
+  'DATE_CLOSED' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_FECHA_EMISION',
+    'default' => true,
+  ),
+  'CLASIFICACION_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CLASIFICACION',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'INGRESO_SI_NO_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_INGRESO_SI_NO',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'GASTO_SI_NO_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_GASTO_SI_NO',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'GRUPO_C' => 
+  array (
+    'type' => 'enum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_GRUPO',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'IVA' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_IVA',
+    'default' => false,
+  ),
+  'RETENCION' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_RETENCION',
+    'default' => false,
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '5%',
+    'label' => 'LBL_LIST_ASSIGNED_USER',
+    'default' => false,
+  ),
+  'MODO_PAGO_C' => 
+  array (
+    'type' => 'enum',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_MODO_PAGO',
+    'sortable' => false,
+    'width' => '10%',
+  ),
+  'DESCUENTO' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_DESCUENTO',
+    'default' => false,
+  ),
+);
+?>
