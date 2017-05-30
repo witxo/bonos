@@ -1,5 +1,5 @@
 <?php
-// created: 2017-05-29 16:28:41
+// created: 2017-05-30 13:16:55
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Fecha de Creación',
@@ -37,4 +37,5 @@ $mod_strings = array (
   'LBL_INACTIVO' => 'Inactivo',
   'LBL_ALUMNO_ACCOUNT_ID' => 'Alumno (relacionado Cuenta ID)',
   'LBL_ALUMNO' => 'Alumno',
+  'LBL_ACCOUNTS_BONOS_BONOS_1_FROM_ACCOUNTS_TITLE' => 'Cuentas',
 );

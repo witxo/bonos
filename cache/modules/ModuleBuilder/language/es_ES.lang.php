@@ -1,5 +1,5 @@
 <?php
-// created: 2017-05-29 16:29:04
+// created: 2017-05-30 13:16:39
 $mod_strings = array (
   'LBL_LOADING' => 'Cargando ...',
   'LBL_HIDEOPTIONS' => 'Ocultar Opciones',

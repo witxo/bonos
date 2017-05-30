@@ -55,7 +55,6 @@ $(node).sugarActionMenu();
 <td valign="top" id='numerobono_label' width='12.5%' scope="col">
 {capture name="label" assign="label"}{sugar_translate label='LBL_NUMEROBONO' module='Bonos_Bonos'}{/capture}
 {$label|strip_semicolon}:
-<span class="required">*</span>
 </td>
 {counter name="fieldsUsed"}
 
@@ -71,8 +70,8 @@ $(node).sugarActionMenu();
 id='{$fields.numerobono.name}' size='30' 
 maxlength='9' 
 value='{$value}' title=''      accesskey='7'  >
-<td valign="top" id='alumno_label' width='12.5%' scope="col">
-{capture name="label" assign="label"}{sugar_translate label='LBL_ALUMNO' module='Bonos_Bonos'}{/capture}
+<td valign="top" id='accounts_bonos_bonos_1_name_label' width='12.5%' scope="col">
+{capture name="label" assign="label"}{sugar_translate label='LBL_ACCOUNTS_BONOS_BONOS_1_FROM_ACCOUNTS_TITLE' module='Bonos_Bonos'}{/capture}
 {$label|strip_semicolon}:
 </td>
 {counter name="fieldsUsed"}
@@ -80,28 +79,28 @@ value='{$value}' title=''      accesskey='7'  >
 <td valign="top" width='37.5%' >
 {counter name="panelFieldCount"}
 
-<input type="text" name="{$fields.alumno.name}" class="sqsEnabled" tabindex="0" id="{$fields.alumno.name}" size="" value="{$fields.alumno.value}" title='' autocomplete="off"  	 >
-<input type="hidden" name="{$fields.alumno.id_name}" 
-id="{$fields.alumno.id_name}" 
-value="{$fields.account_id_c.value}">
+<input type="text" name="{$fields.accounts_bonos_bonos_1_name.name}" class="sqsEnabled" tabindex="0" id="{$fields.accounts_bonos_bonos_1_name.name}" size="" value="{$fields.accounts_bonos_bonos_1_name.value}" title='' autocomplete="off"  	 >
+<input type="hidden" name="{$fields.accounts_bonos_bonos_1_name.id_name}" 
+id="{$fields.accounts_bonos_bonos_1_name.id_name}" 
+value="{$fields.accounts_bonos_bonos_1accounts_ida.value}">
 <span class="id-ff multiple">
-<button type="button" name="btn_{$fields.alumno.name}" id="btn_{$fields.alumno.name}" tabindex="0" title="{sugar_translate label="LBL_ACCESSKEY_SELECT_ACCOUNTS_TITLE"}" class="button firstChild" value="{sugar_translate label="LBL_ACCESSKEY_SELECT_ACCOUNTS_LABEL"}"
+<button type="button" name="btn_{$fields.accounts_bonos_bonos_1_name.name}" id="btn_{$fields.accounts_bonos_bonos_1_name.name}" tabindex="0" title="{sugar_translate label="LBL_ACCESSKEY_SELECT_ACCOUNTS_TITLE"}" class="button firstChild" value="{sugar_translate label="LBL_ACCESSKEY_SELECT_ACCOUNTS_LABEL"}"
 onclick='open_popup(
-"{$fields.alumno.module}", 
+"{$fields.accounts_bonos_bonos_1_name.module}", 
 600, 
 400, 
 "", 
 true, 
 false, 
-{literal}{"call_back_function":"set_return","form_name":"EditView","field_to_name_array":{"id":"account_id_c","name":"alumno"}}{/literal}, 
+{literal}{"call_back_function":"set_return","form_name":"EditView","field_to_name_array":{"id":"accounts_bonos_bonos_1accounts_ida","name":"accounts_bonos_bonos_1_name"}}{/literal}, 
 "single", 
 true
-);' ><img src="{sugar_getimagepath file="id-ff-select.png"}"></button><button type="button" name="btn_clr_{$fields.alumno.name}" id="btn_clr_{$fields.alumno.name}" tabindex="0" title="{sugar_translate label="LBL_ACCESSKEY_CLEAR_ACCOUNTS_TITLE"}"  class="button lastChild"
-onclick="SUGAR.clearRelateField(this.form, '{$fields.alumno.name}', '{$fields.alumno.id_name}');"  value="{sugar_translate label="LBL_ACCESSKEY_CLEAR_ACCOUNTS_LABEL"}" ><img src="{sugar_getimagepath file="id-ff-clear.png"}"></button>
+);' ><img src="{sugar_getimagepath file="id-ff-select.png"}"></button><button type="button" name="btn_clr_{$fields.accounts_bonos_bonos_1_name.name}" id="btn_clr_{$fields.accounts_bonos_bonos_1_name.name}" tabindex="0" title="{sugar_translate label="LBL_ACCESSKEY_CLEAR_ACCOUNTS_TITLE"}"  class="button lastChild"
+onclick="SUGAR.clearRelateField(this.form, '{$fields.accounts_bonos_bonos_1_name.name}', '{$fields.accounts_bonos_bonos_1_name.id_name}');"  value="{sugar_translate label="LBL_ACCESSKEY_CLEAR_ACCOUNTS_LABEL"}" ><img src="{sugar_getimagepath file="id-ff-clear.png"}"></button>
 </span>
 <script type="text/javascript">
 SUGAR.util.doWhen(
-		"typeof(sqs_objects) != 'undefined' && typeof(sqs_objects['{$form_name}_{$fields.alumno.name}']) != 'undefined'",
+		"typeof(sqs_objects) != 'undefined' && typeof(sqs_objects['{$form_name}_{$fields.accounts_bonos_bonos_1_name.name}']) != 'undefined'",
 		enableQS
 );
 </script>
@@ -213,6 +212,26 @@ value="1" title='' tabindex="0" {$checked} >
 {if $fieldsUsed > 0 }
 {$tableRow}
 {/if}
+{counter name="fieldsUsed" start=0 print=false assign="fieldsUsed"}
+{capture name="tr" assign="tableRow"}
+<tr>
+<td valign="top" id='_label' width='12.5%' scope="col">
+&nbsp;
+</td>
+{counter name="fieldsUsed"}
+
+<td valign="top" width='37.5%' >
+<td valign="top" id='_label' width='12.5%' scope="col">
+&nbsp;
+</td>
+{counter name="fieldsUsed"}
+
+<td valign="top" width='37.5%' >
+</tr>
+{/capture}
+{if $fieldsUsed > 0 }
+{$tableRow}
+{/if}
 </table>
 </div>
 {if $panelFieldCount == 0}
@@ -261,12 +280,13 @@ addToValidate('EditView', 'description', 'text', false,'{/literal}{sugar_transla
 addToValidate('EditView', 'deleted', 'bool', false,'{/literal}{sugar_translate label='LBL_DELETED' module='Bonos_Bonos' for_js=true}{literal}' );
 addToValidate('EditView', 'assigned_user_id', 'relate', false,'{/literal}{sugar_translate label='LBL_ASSIGNED_TO_ID' module='Bonos_Bonos' for_js=true}{literal}' );
 addToValidate('EditView', 'assigned_user_name', 'relate', false,'{/literal}{sugar_translate label='LBL_ASSIGNED_TO_NAME' module='Bonos_Bonos' for_js=true}{literal}' );
-addToValidate('EditView', 'numerobono', 'varchar', true,'{/literal}{sugar_translate label='LBL_NUMEROBONO' module='Bonos_Bonos' for_js=true}{literal}' );
+addToValidate('EditView', 'numerobono', 'varchar', false,'{/literal}{sugar_translate label='LBL_NUMEROBONO' module='Bonos_Bonos' for_js=true}{literal}' );
 addToValidate('EditView', 'precio', 'decimal', true,'{/literal}{sugar_translate label='LBL_PRECIO' module='Bonos_Bonos' for_js=true}{literal}' );
 addToValidate('EditView', 'fechacaducidad', 'date', true,'{/literal}{sugar_translate label='LBL_FECHACADUCIDAD' module='Bonos_Bonos' for_js=true}{literal}' );
 addToValidate('EditView', 'inactivo', 'bool', false,'{/literal}{sugar_translate label='LBL_INACTIVO' module='Bonos_Bonos' for_js=true}{literal}' );
 addToValidate('EditView', 'account_id_c', 'id', false,'{/literal}{sugar_translate label='LBL_ALUMNO_ACCOUNT_ID' module='Bonos_Bonos' for_js=true}{literal}' );
 addToValidate('EditView', 'alumno', 'relate', false,'{/literal}{sugar_translate label='LBL_ALUMNO' module='Bonos_Bonos' for_js=true}{literal}' );
+addToValidate('EditView', 'accounts_bonos_bonos_1_name', 'relate', false,'{/literal}{sugar_translate label='LBL_ACCOUNTS_BONOS_BONOS_1_FROM_ACCOUNTS_TITLE' module='Bonos_Bonos' for_js=true}{literal}' );
 addToValidateBinaryDependency('EditView', 'assigned_user_name', 'alpha', false,'{/literal}{sugar_translate label='ERR_SQS_NO_MATCH_FIELD' module='Bonos_Bonos' for_js=true}{literal}: {/literal}{sugar_translate label='LBL_ASSIGNED_TO' module='Bonos_Bonos' for_js=true}{literal}', 'assigned_user_id' );
-addToValidateBinaryDependency('EditView', 'alumno', 'alpha', false,'{/literal}{sugar_translate label='ERR_SQS_NO_MATCH_FIELD' module='Bonos_Bonos' for_js=true}{literal}: {/literal}{sugar_translate label='LBL_ALUMNO' module='Bonos_Bonos' for_js=true}{literal}', 'account_id_c' );
-</script><script language="javascript">if(typeof sqs_objects == 'undefined'){var sqs_objects = new Array;}sqs_objects['EditView_alumno']={"form":"EditView","method":"query","modules":["Accounts"],"group":"or","field_list":["name","id"],"populate_list":["alumno","account_id_c"],"required_list":["parent_id"],"conditions":[{"name":"name","op":"like_custom","end":"%","value":""}],"order":"name","limit":"30","no_match_text":"Sin coincidencias"};</script>{/literal}
+addToValidateBinaryDependency('EditView', 'accounts_bonos_bonos_1_name', 'alpha', false,'{/literal}{sugar_translate label='ERR_SQS_NO_MATCH_FIELD' module='Bonos_Bonos' for_js=true}{literal}: {/literal}{sugar_translate label='LBL_ACCOUNTS_BONOS_BONOS_1_FROM_ACCOUNTS_TITLE' module='Bonos_Bonos' for_js=true}{literal}', 'accounts_bonos_bonos_1accounts_ida' );
+</script><script language="javascript">if(typeof sqs_objects == 'undefined'){var sqs_objects = new Array;}sqs_objects['EditView_accounts_bonos_bonos_1_name']={"form":"EditView","method":"query","modules":["Accounts"],"group":"or","field_list":["name","id"],"populate_list":["EditView_accounts_bonos_bonos_1_name","accounts_bonos_bonos_1accounts_ida"],"conditions":[{"name":"name","op":"like_custom","end":"%","value":""}],"required_list":["accounts_bonos_bonos_1accounts_ida"],"order":"name","limit":"30","no_match_text":"Sin coincidencias"};</script>{/literal}

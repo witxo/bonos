@@ -1132,6 +1132,17 @@
       'id' => 'Accountsnuc_escaneado_c',
       'custom_module' => 'Accounts',
     ),
+    'accounts_bonos_bonos_1' => 
+    array (
+      'name' => 'accounts_bonos_bonos_1',
+      'type' => 'link',
+      'relationship' => 'accounts_bonos_bonos_1',
+      'source' => 'non-db',
+      'module' => 'Bonos_Bonos',
+      'bean_name' => 'Bonos_Bonos',
+      'side' => 'right',
+      'vname' => 'LBL_ACCOUNTS_BONOS_BONOS_1_FROM_BONOS_BONOS_TITLE',
+    ),
     'prev_firmado_c' => 
     array (
       'labelValue' => 'Firmado',

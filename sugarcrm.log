@@ -14009,3 +14009,24 @@ Mon May 29 16:10:54 2017 [26660][1][FATAL] Unable to return chart data, invalid 
 Mon May 29 16:10:54 2017 [26660][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_6c5e9f1b-d88e-bdcf-d989-5463a6872d38.xml
 Mon May 29 16:10:54 2017 [26660][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_acebcdb0-6cfd-3c6c-0c98-5463a2c56701.xml
 Mon May 29 16:10:54 2017 [26660][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_f055da3c-2af6-3dac-efc0-5464df0e4625.xml
+Tue May 30 11:29:42 2017 [29139][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_f343ae70-e6f5-1302-f9cb-5463a12a953c.xml
+Tue May 30 11:29:43 2017 [29139][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_43c317f2-93e0-b95a-ce55-5463a34a0d9f.xml
+Tue May 30 11:29:43 2017 [29139][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_1f07010e-ab8a-d598-f53d-58ad78be97e3.xml
+Tue May 30 11:29:43 2017 [29139][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_6c5e9f1b-d88e-bdcf-d989-5463a6872d38.xml
+Tue May 30 11:29:43 2017 [29139][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_acebcdb0-6cfd-3c6c-0c98-5463a2c56701.xml
+Tue May 30 11:29:43 2017 [29139][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_f055da3c-2af6-3dac-efc0-5464df0e4625.xml
+Tue May 30 11:31:44 2017 [15044][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_f343ae70-e6f5-1302-f9cb-5463a12a953c.xml
+Tue May 30 11:31:44 2017 [15044][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_43c317f2-93e0-b95a-ce55-5463a34a0d9f.xml
+Tue May 30 11:31:44 2017 [15044][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_1f07010e-ab8a-d598-f53d-58ad78be97e3.xml
+Tue May 30 11:31:44 2017 [15044][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_6c5e9f1b-d88e-bdcf-d989-5463a6872d38.xml
+Tue May 30 11:31:44 2017 [15044][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_acebcdb0-6cfd-3c6c-0c98-5463a2c56701.xml
+Tue May 30 11:31:44 2017 [15044][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_f055da3c-2af6-3dac-efc0-5464df0e4625.xml
+Tue May 30 12:25:12 2017 [3537][1][FATAL]  Query Failed: SELECT MAX(number) AS total FROM bonos_bonos: MySQL error 1054: Unknown column 'number' in 'field list'
+Tue May 30 12:25:22 2017 [3537][1][FATAL]  Query Failed: SELECT MAX(number) AS total FROM bonos_bonos: MySQL error 1054: Unknown column 'number' in 'field list'
+Tue May 30 12:26:20 2017 [24971][1][FATAL]  Query Failed: SELECT MAX(nummerobono) AS total FROM bonos_bonos: MySQL error 1054: Unknown column 'nummerobono' in 'field list'
+Tue May 30 12:34:22 2017 [4908][1][FATAL]  Query Failed: SELECT MAX(nummerobono) AS total FROM bonos_bonos: MySQL error 1054: Unknown column 'nummerobono' in 'field list'
+Tue May 30 12:35:01 2017 [4908][1][FATAL]  Query Failed: SELECT MAX(nummerobono) AS total FROM bonos_bonos: MySQL error 1054: Unknown column 'nummerobono' in 'field list'
+Tue May 30 12:35:27 2017 [24971][1][FATAL]  Query Failed: SELECT MAX(nummerobono) AS total FROM bonos_bonos: MySQL error 1054: Unknown column 'nummerobono' in 'field list'
+Tue May 30 12:48:42 2017 [3376][1][FATAL]  Query Failed: SELECT MAX(nummerobono) AS total FROM bonos_bonos: MySQL error 1054: Unknown column 'nummerobono' in 'field list'
+Tue May 30 12:50:19 2017 [5279][1][FATAL]  Query Failed: SELECT MAX(nummerobono) AS total FROM bonos_bonos: MySQL error 1054: Unknown column 'nummerobono' in 'field list'
+Tue May 30 12:51:01 2017 [4909][1][FATAL]  Query Failed: SELECT MAX(nummerobono) AS total FROM bonos_bonos: MySQL error 1054: Unknown column 'nummerobono' in 'field list'

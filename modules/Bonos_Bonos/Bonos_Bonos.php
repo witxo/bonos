@@ -38,11 +38,35 @@
  * THIS CLASS IS FOR DEVELOPERS TO MAKE CUSTOMIZATIONS IN
  */
 require_once('modules/Bonos_Bonos/Bonos_Bonos_sugar.php');
+
 class Bonos_Bonos extends Bonos_Bonos_sugar {
 	
 	function Bonos_Bonos(){	
 		parent::Bonos_Bonos_sugar();
 	}
 	
+  
+  
+  function save($check_notify = FALSE) {
+    
+    $newnumber=2017000000;
+$db = $GLOBALS['db'];
+ 
+    $id =  $this->bean->id;
+ 
+    $query = "SELECT MAX(numerobono) AS total FROM bonos_bonos where deleted = 0";
+    $result = $db->query($query);
+    $row = $db->fetchByAssoc($result);
+    
+
+
+     $newnumber = $row['total'];
+if ($this->numerobono == '')
+{
+	$this->numerobono = $newnumber + 1; // is this correct if i want the custom_id_c to increment?    
+}
+    parent::save($check_notify);
+  }
+  
 }
 ?>
