@@ -38,16 +38,13 @@
  * THIS CLASS IS FOR DEVELOPERS TO MAKE CUSTOMIZATIONS IN
  */
 require_once('modules/Bonos_Bonos/Bonos_Bonos_sugar.php');
-
 class Bonos_Bonos extends Bonos_Bonos_sugar {
 	
 	function Bonos_Bonos(){	
 		parent::Bonos_Bonos_sugar();
 	}
 	
-  
-  
-  function save($check_notify = FALSE) {
+    function save($check_notify = FALSE) {
     
     $newnumber=2017000000;
 $db = $GLOBALS['db'];
@@ -58,8 +55,6 @@ $db = $GLOBALS['db'];
     $result = $db->query($query);
     $row = $db->fetchByAssoc($result);
     
-
-
      $newnumber = $row['total'];
 if ($this->numerobono == '')
 {

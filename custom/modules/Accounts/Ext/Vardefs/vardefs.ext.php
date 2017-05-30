@@ -116,23 +116,23 @@ $dictionary['Account']['fields']['nuc_firmado_c']['labelValue']='Firmado';
 
  
 
- // created: 2016-10-05 18:59:41
-$dictionary['Account']['fields']['nuc_escaneado_c']['labelValue']='Escaneado';
-
- 
-
-// created: 2017-05-30 13:16:36
-$dictionary["Account"]["fields"]["accounts_bonos_bonos_1"] = array (
-  'name' => 'accounts_bonos_bonos_1',
+// created: 2017-05-30 13:29:57
+$dictionary["Account"]["fields"]["bonos_bonos_accounts"] = array (
+  'name' => 'bonos_bonos_accounts',
   'type' => 'link',
-  'relationship' => 'accounts_bonos_bonos_1',
+  'relationship' => 'bonos_bonos_accounts',
   'source' => 'non-db',
   'module' => 'Bonos_Bonos',
   'bean_name' => 'Bonos_Bonos',
   'side' => 'right',
-  'vname' => 'LBL_ACCOUNTS_BONOS_BONOS_1_FROM_BONOS_BONOS_TITLE',
+  'vname' => 'LBL_BONOS_BONOS_ACCOUNTS_FROM_BONOS_BONOS_TITLE',
 );
 
+
+ // created: 2016-10-05 18:59:41
+$dictionary['Account']['fields']['nuc_escaneado_c']['labelValue']='Escaneado';
+
+ 
 
  // created: 2016-10-05 19:03:03
 $dictionary['Account']['fields']['prev_firmado_c']['labelValue']='Firmado';

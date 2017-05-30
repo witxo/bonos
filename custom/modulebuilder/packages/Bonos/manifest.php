@@ -60,9 +60,9 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'Bonos',
-  'published_date' => '2017-05-29 14:32:22',
+  'published_date' => '2017-05-30 11:29:56',
   'type' => 'module',
-  'version' => 1496068344,
+  'version' => 1496143796,
   'remove_tables' => 'prompt',
 );
 

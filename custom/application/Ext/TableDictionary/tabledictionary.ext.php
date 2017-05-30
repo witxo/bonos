@@ -8,7 +8,7 @@ include('custom/metadata/fact_facturas_fact_itemsMetaData.php');
 
  
  //WARNING: The contents of this file are auto-generated
-include('custom/metadata/accounts_bonos_bonos_1MetaData.php');
+include('custom/metadata/bonos_bonos_accountsMetaData.php');
 
 
  

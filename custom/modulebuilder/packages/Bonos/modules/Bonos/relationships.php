@@ -35,4 +35,20 @@
  ********************************************************************************/
 
 $relationships = array (
+  'bonos_bonos_accounts' => 
+  array (
+    'rhs_label' => 'Cuentas',
+    'lhs_label' => 'Bonos',
+    'lhs_subpanel' => 'default',
+    'lhs_module' => 'Bonos_Bonos',
+    'rhs_module' => 'Accounts',
+    'relationship_type' => 'many-to-one',
+    'readonly' => false,
+    'deleted' => false,
+    'relationship_only' => false,
+    'for_activities' => false,
+    'is_custom' => false,
+    'from_studio' => false,
+    'relationship_name' => 'bonos_bonos_accounts',
+  ),
 );

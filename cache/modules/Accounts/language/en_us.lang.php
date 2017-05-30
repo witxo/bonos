@@ -1,5 +1,5 @@
 <?php
-// created: 2017-05-30 13:16:39
+// created: 2017-05-30 13:29:58
 $mod_strings = array (
   'db_name' => 'LBL_LIST_ACCOUNT_NAME',
   'db_website' => 'LBL_LIST_WEBSITE',
@@ -149,4 +149,5 @@ $mod_strings = array (
   'LBL_CON_CONTRATOS_ACCOUNTS_FROM_CON_CONTRATOS_TITLE' => 'Contratos',
   'LBL_STIVE_ORDENES_REPARACION_ACCOUNTS_FROM_STIVE_ORDENES_REPARACION_TITLE' => 'Reparacion',
   'LBL_STIVE_ORDENES_ACCOUNTS_FROM_STIVE_ORDENES_TITLE' => 'Ordenes Reparacion',
+  'LBL_BONOS_BONOS_ACCOUNTS_FROM_BONOS_BONOS_TITLE' => 'Bonos',
 );

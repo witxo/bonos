@@ -4538,14 +4538,13 @@
     'join_key_lhs' => 'factura_id',
     'join_key_rhs' => 'item_id',
   ),
-  'accounts_bonos_bonos_1' => 
+  'bonos_bonos_accounts' => 
   array (
-    'name' => 'accounts_bonos_bonos_1',
+    'name' => 'bonos_bonos_accounts',
     'true_relationship_type' => 'one-to-many',
-    'from_studio' => true,
     'relationships' => 
     array (
-      'accounts_bonos_bonos_1' => 
+      'bonos_bonos_accounts' => 
       array (
         'lhs_module' => 'Accounts',
         'lhs_table' => 'accounts',
@@ -4554,12 +4553,12 @@
         'rhs_table' => 'bonos_bonos',
         'rhs_key' => 'id',
         'relationship_type' => 'many-to-many',
-        'join_table' => 'accounts_bonos_bonos_1_c',
-        'join_key_lhs' => 'accounts_bonos_bonos_1accounts_ida',
-        'join_key_rhs' => 'accounts_bonos_bonos_1bonos_bonos_idb',
+        'join_table' => 'bonos_bonos_accounts_c',
+        'join_key_lhs' => 'bonos_bonos_accountsaccounts_ida',
+        'join_key_rhs' => 'bonos_bonos_accountsbonos_bonos_idb',
       ),
     ),
-    'table' => 'accounts_bonos_bonos_1_c',
+    'table' => 'bonos_bonos_accounts_c',
     'fields' => 
     array (
       0 => 
@@ -4583,13 +4582,13 @@
       ),
       3 => 
       array (
-        'name' => 'accounts_bonos_bonos_1accounts_ida',
+        'name' => 'bonos_bonos_accountsaccounts_ida',
         'type' => 'varchar',
         'len' => 36,
       ),
       4 => 
       array (
-        'name' => 'accounts_bonos_bonos_1bonos_bonos_idb',
+        'name' => 'bonos_bonos_accountsbonos_bonos_idb',
         'type' => 'varchar',
         'len' => 36,
       ),
@@ -4598,7 +4597,7 @@
     array (
       0 => 
       array (
-        'name' => 'accounts_bonos_bonos_1spk',
+        'name' => 'bonos_bonos_accountsspk',
         'type' => 'primary',
         'fields' => 
         array (
@@ -4607,20 +4606,20 @@
       ),
       1 => 
       array (
-        'name' => 'accounts_bonos_bonos_1_ida1',
+        'name' => 'bonos_bonos_accounts_ida1',
         'type' => 'index',
         'fields' => 
         array (
-          0 => 'accounts_bonos_bonos_1accounts_ida',
+          0 => 'bonos_bonos_accountsaccounts_ida',
         ),
       ),
       2 => 
       array (
-        'name' => 'accounts_bonos_bonos_1_alt',
+        'name' => 'bonos_bonos_accounts_alt',
         'type' => 'alternate_key',
         'fields' => 
         array (
-          0 => 'accounts_bonos_bonos_1bonos_bonos_idb',
+          0 => 'bonos_bonos_accountsbonos_bonos_idb',
         ),
       ),
     ),
@@ -4631,9 +4630,9 @@
     'rhs_table' => 'bonos_bonos',
     'rhs_key' => 'id',
     'relationship_type' => 'many-to-many',
-    'join_table' => 'accounts_bonos_bonos_1_c',
-    'join_key_lhs' => 'accounts_bonos_bonos_1accounts_ida',
-    'join_key_rhs' => 'accounts_bonos_bonos_1bonos_bonos_idb',
+    'join_table' => 'bonos_bonos_accounts_c',
+    'join_key_lhs' => 'bonos_bonos_accountsaccounts_ida',
+    'join_key_rhs' => 'bonos_bonos_accountsbonos_bonos_idb',
   ),
   'meetings_accounts_1' => 
   array (

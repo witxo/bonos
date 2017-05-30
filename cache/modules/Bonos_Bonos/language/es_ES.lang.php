@@ -1,5 +1,5 @@
 <?php
-// created: 2017-05-30 13:16:55
+// created: 2017-05-30 13:30:00
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Fecha de Creación',
@@ -22,7 +22,7 @@ $mod_strings = array (
   'LBL_LIST_FORM_TITLE' => 'Bonos Lista',
   'LBL_MODULE_NAME' => 'Bonos',
   'LBL_MODULE_TITLE' => 'Bonos',
-  'LBL_HOMEPAGE_TITLE' => 'Mi Bonos',
+  'LBL_HOMEPAGE_TITLE' => 'Mis Bonos',
   'LNK_NEW_RECORD' => 'Crear Bonos',
   'LNK_LIST' => 'Vista Bonos',
   'LNK_IMPORT_BONOS_BONOS' => 'Importar Bonos',
@@ -30,12 +30,11 @@ $mod_strings = array (
   'LBL_HISTORY_SUBPANEL_TITLE' => 'Ver Historial',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Actividades',
   'LBL_BONOS_BONOS_SUBPANEL_TITLE' => 'Bonos',
-  'LBL_NEW_FORM_TITLE' => 'Nuevo Bonos',
+  'LBL_NEW_FORM_TITLE' => 'Nuevo Bono',
   'LBL_NUMEROBONO' => 'Numero Bono',
   'LBL_PRECIO' => 'Precio',
   'LBL_FECHACADUCIDAD' => 'Fecha Caducidad',
   'LBL_INACTIVO' => 'Inactivo',
-  'LBL_ALUMNO_ACCOUNT_ID' => 'Alumno (relacionado Cuenta ID)',
   'LBL_ALUMNO' => 'Alumno',
-  'LBL_ACCOUNTS_BONOS_BONOS_1_FROM_ACCOUNTS_TITLE' => 'Cuentas',
+  'LBL_BONOS_BONOS_ACCOUNTS_FROM_ACCOUNTS_TITLE' => 'Cuentas',
 );

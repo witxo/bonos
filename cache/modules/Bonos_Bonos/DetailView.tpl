@@ -48,7 +48,7 @@ SUGAR.util.doWhen(function(){
 {$label|strip_semicolon}:
 {/if}
 </td>
-<td width='37.5%'  >
+<td width='37.5%' colspan='3' >
 {if !$fields.numerobono.hidden}
 {counter name="panelFieldCount"}
 
@@ -58,24 +58,6 @@ SUGAR.util.doWhen(function(){
 {assign var="value" value=$fields.numerobono.value }
 {/if} 
 <span class="sugar_field" id="{$fields.numerobono.name}">{$fields.numerobono.value}</span>
-{/if}
-</td>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-{if !$fields.accounts_bonos_bonos_1_name.hidden}
-{capture name="label" assign="label"}{sugar_translate label='LBL_ACCOUNTS_BONOS_BONOS_1_FROM_ACCOUNTS_TITLE' module='Bonos_Bonos'}{/capture}
-{$label|strip_semicolon}:
-{/if}
-</td>
-<td width='37.5%'  >
-{if !$fields.accounts_bonos_bonos_1_name.hidden}
-{counter name="panelFieldCount"}
-
-{if !empty($fields.accounts_bonos_bonos_1accounts_ida.value)}
-{capture assign="detail_url"}index.php?module=Accounts&action=DetailView&record={$fields.accounts_bonos_bonos_1accounts_ida.value}{/capture}
-<a href="{sugar_ajax_url url=$detail_url}">{/if}
-<span id="accounts_bonos_bonos_1accounts_ida" class="sugar_field" data-id-value="{$fields.accounts_bonos_bonos_1accounts_ida.value}">{$fields.accounts_bonos_bonos_1_name.value}</span>
-{if !empty($fields.accounts_bonos_bonos_1accounts_ida.value)}</a>{/if}
 {/if}
 </td>
 </tr>
@@ -182,15 +164,21 @@ SUGAR.util.doWhen(function(){
 <tr>
 {counter name="fieldsUsed"}
 <td width='12.5%' scope="col">
-&nbsp;
+{if !$fields.bonos_bonos_accounts_name.hidden}
+{capture name="label" assign="label"}{sugar_translate label='LBL_BONOS_BONOS_ACCOUNTS_FROM_ACCOUNTS_TITLE' module='Bonos_Bonos'}{/capture}
+{$label|strip_semicolon}:
+{/if}
 </td>
-<td width='37.5%'  >
-</td>
-{counter name="fieldsUsed"}
-<td width='12.5%' scope="col">
-&nbsp;
-</td>
-<td width='37.5%'  >
+<td width='37.5%' colspan='3' >
+{if !$fields.bonos_bonos_accounts_name.hidden}
+{counter name="panelFieldCount"}
+
+{if !empty($fields.bonos_bonos_accountsaccounts_ida.value)}
+{capture assign="detail_url"}index.php?module=Accounts&action=DetailView&record={$fields.bonos_bonos_accountsaccounts_ida.value}{/capture}
+<a href="{sugar_ajax_url url=$detail_url}">{/if}
+<span id="bonos_bonos_accountsaccounts_ida" class="sugar_field" data-id-value="{$fields.bonos_bonos_accountsaccounts_ida.value}">{$fields.bonos_bonos_accounts_name.value}</span>
+{if !empty($fields.bonos_bonos_accountsaccounts_ida.value)}</a>{/if}
+{/if}
 </td>
 </tr>
 {/capture}

@@ -9,6 +9,15 @@ array (
     'width' => '10%',
     'default' => true,
   ),
+  'BONOS_BONOS_ACCOUNTS_NAME' => 
+  array (
+    'type' => 'relate',
+    'link' => true,
+    'label' => 'LBL_BONOS_BONOS_ACCOUNTS_FROM_ACCOUNTS_TITLE',
+    'id' => 'BONOS_BONOS_ACCOUNTSACCOUNTS_IDA',
+    'width' => '10%',
+    'default' => true,
+  ),
   'PRECIO' => 
   array (
     'type' => 'decimal',

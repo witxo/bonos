@@ -2,42 +2,37 @@
  //WARNING: The contents of this file are auto-generated
 
 
-// created: 2017-05-30 13:16:36
-$dictionary["Bonos_Bonos"]["fields"]["accounts_bonos_bonos_1"] = array (
-  'name' => 'accounts_bonos_bonos_1',
+// created: 2017-05-30 13:29:57
+$dictionary["Bonos_Bonos"]["fields"]["bonos_bonos_accounts"] = array (
+  'name' => 'bonos_bonos_accounts',
   'type' => 'link',
-  'relationship' => 'accounts_bonos_bonos_1',
+  'relationship' => 'bonos_bonos_accounts',
   'source' => 'non-db',
   'module' => 'Accounts',
   'bean_name' => 'Account',
-  'vname' => 'LBL_ACCOUNTS_BONOS_BONOS_1_FROM_ACCOUNTS_TITLE',
-  'id_name' => 'accounts_bonos_bonos_1accounts_ida',
+  'vname' => 'LBL_BONOS_BONOS_ACCOUNTS_FROM_ACCOUNTS_TITLE',
+  'id_name' => 'bonos_bonos_accountsaccounts_ida',
 );
-$dictionary["Bonos_Bonos"]["fields"]["accounts_bonos_bonos_1_name"] = array (
-  'name' => 'accounts_bonos_bonos_1_name',
+$dictionary["Bonos_Bonos"]["fields"]["bonos_bonos_accounts_name"] = array (
+  'name' => 'bonos_bonos_accounts_name',
   'type' => 'relate',
   'source' => 'non-db',
-  'vname' => 'LBL_ACCOUNTS_BONOS_BONOS_1_FROM_ACCOUNTS_TITLE',
+  'vname' => 'LBL_BONOS_BONOS_ACCOUNTS_FROM_ACCOUNTS_TITLE',
   'save' => true,
-  'id_name' => 'accounts_bonos_bonos_1accounts_ida',
-  'link' => 'accounts_bonos_bonos_1',
+  'id_name' => 'bonos_bonos_accountsaccounts_ida',
+  'link' => 'bonos_bonos_accounts',
   'table' => 'accounts',
   'module' => 'Accounts',
   'rname' => 'name',
 );
-$dictionary["Bonos_Bonos"]["fields"]["accounts_bonos_bonos_1accounts_ida"] = array (
-  'name' => 'accounts_bonos_bonos_1accounts_ida',
+$dictionary["Bonos_Bonos"]["fields"]["bonos_bonos_accountsaccounts_ida"] = array (
+  'name' => 'bonos_bonos_accountsaccounts_ida',
   'type' => 'link',
-  'relationship' => 'accounts_bonos_bonos_1',
+  'relationship' => 'bonos_bonos_accounts',
   'source' => 'non-db',
   'reportable' => false,
   'side' => 'right',
-  'vname' => 'LBL_ACCOUNTS_BONOS_BONOS_1_FROM_BONOS_BONOS_TITLE',
+  'vname' => 'LBL_BONOS_BONOS_ACCOUNTS_FROM_BONOS_BONOS_TITLE',
 );
 
-
- // created: 2017-05-30 11:57:02
-$dictionary['Bonos_Bonos']['fields']['numerobono']['required']=false;
-
- 
 ?>

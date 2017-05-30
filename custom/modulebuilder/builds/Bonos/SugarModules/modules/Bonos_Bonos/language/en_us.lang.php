@@ -69,6 +69,5 @@ $mod_strings = array (
   'LBL_PRECIO' => 'Precio',
   'LBL_FECHACADUCIDAD' => 'Fecha Caducidad',
   'LBL_INACTIVO' => 'Inactivo',
-  'LBL_ALUMNO_ACCOUNT_ID' => 'Alumno (relacionado Cuenta ID)',
   'LBL_ALUMNO' => 'Alumno',
 );

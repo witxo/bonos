@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.11, created on 2017-05-30 13:18:00
+<?php /* Smarty version 2.6.11, created on 2017-05-30 13:30:18
          compiled from cache/modules/Bonos_Bonos/DetailView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_include', 'cache/modules/Bonos_Bonos/DetailView.tpl', 33, false),array('function', 'counter', 'cache/modules/Bonos_Bonos/DetailView.tpl', 38, false),array('function', 'sugar_translate', 'cache/modules/Bonos_Bonos/DetailView.tpl', 47, false),array('function', 'sugar_ajax_url', 'cache/modules/Bonos_Bonos/DetailView.tpl', 76, false),array('function', 'sugar_number_format', 'cache/modules/Bonos_Bonos/DetailView.tpl', 102, false),array('modifier', 'strip_semicolon', 'cache/modules/Bonos_Bonos/DetailView.tpl', 48, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_include', 'cache/modules/Bonos_Bonos/DetailView.tpl', 33, false),array('function', 'counter', 'cache/modules/Bonos_Bonos/DetailView.tpl', 38, false),array('function', 'sugar_translate', 'cache/modules/Bonos_Bonos/DetailView.tpl', 47, false),array('function', 'sugar_number_format', 'cache/modules/Bonos_Bonos/DetailView.tpl', 84, false),array('function', 'sugar_ajax_url', 'cache/modules/Bonos_Bonos/DetailView.tpl', 178, false),array('modifier', 'strip_semicolon', 'cache/modules/Bonos_Bonos/DetailView.tpl', 48, false),)), $this); ?>
 
 
 <script language="javascript">
@@ -81,7 +81,7 @@ SUGAR.util.doWhen(function(){
 :
 <?php endif; ?>
 </td>
-<td width='37.5%'  >
+<td width='37.5%' colspan='3' >
 <?php if (! $this->_tpl_vars['fields']['numerobono']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
 
 
@@ -90,25 +90,6 @@ SUGAR.util.doWhen(function(){
 "><?php echo $this->_tpl_vars['fields']['numerobono']['value']; ?>
 </span>
 <?php endif; ?>
-</td>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
-
-<td width='12.5%' scope="col">
-<?php if (! $this->_tpl_vars['fields']['accounts_bonos_bonos_1_name']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_ACCOUNTS_BONOS_BONOS_1_FROM_ACCOUNTS_TITLE','module' => 'Bonos_Bonos'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-<?php endif; ?>
-</td>
-<td width='37.5%'  >
-<?php if (! $this->_tpl_vars['fields']['accounts_bonos_bonos_1_name']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
-
-
-<?php if (! empty ( $this->_tpl_vars['fields']['accounts_bonos_bonos_1accounts_ida']['value'] )):  ob_start(); ?>index.php?module=Accounts&action=DetailView&record=<?php echo $this->_tpl_vars['fields']['accounts_bonos_bonos_1accounts_ida']['value'];  $this->_smarty_vars['capture']['default'] = ob_get_contents();  $this->assign('detail_url', ob_get_contents());ob_end_clean(); ?>
-<a href="<?php echo smarty_function_sugar_ajax_url(array('url' => $this->_tpl_vars['detail_url']), $this);?>
-"><?php endif; ?>
-<span id="accounts_bonos_bonos_1accounts_ida" class="sugar_field" data-id-value="<?php echo $this->_tpl_vars['fields']['accounts_bonos_bonos_1accounts_ida']['value']; ?>
-"><?php echo $this->_tpl_vars['fields']['accounts_bonos_bonos_1_name']['value']; ?>
-</span>
-<?php if (! empty ( $this->_tpl_vars['fields']['accounts_bonos_bonos_1accounts_ida']['value'] )): ?></a><?php endif;  endif; ?>
 </td>
 </tr>
 <?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>
@@ -213,16 +194,21 @@ SUGAR.util.doWhen(function(){
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 <td width='12.5%' scope="col">
-&nbsp;
+<?php if (! $this->_tpl_vars['fields']['bonos_bonos_accounts_name']['hidden']):  ob_start();  echo smarty_function_sugar_translate(array('label' => 'LBL_BONOS_BONOS_ACCOUNTS_FROM_ACCOUNTS_TITLE','module' => 'Bonos_Bonos'), $this); $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean();  echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<?php endif; ?>
 </td>
-<td width='37.5%'  >
-</td>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+<td width='37.5%' colspan='3' >
+<?php if (! $this->_tpl_vars['fields']['bonos_bonos_accounts_name']['hidden']):  echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
 
-<td width='12.5%' scope="col">
-&nbsp;
-</td>
-<td width='37.5%'  >
+
+<?php if (! empty ( $this->_tpl_vars['fields']['bonos_bonos_accountsaccounts_ida']['value'] )):  ob_start(); ?>index.php?module=Accounts&action=DetailView&record=<?php echo $this->_tpl_vars['fields']['bonos_bonos_accountsaccounts_ida']['value'];  $this->_smarty_vars['capture']['default'] = ob_get_contents();  $this->assign('detail_url', ob_get_contents());ob_end_clean(); ?>
+<a href="<?php echo smarty_function_sugar_ajax_url(array('url' => $this->_tpl_vars['detail_url']), $this);?>
+"><?php endif; ?>
+<span id="bonos_bonos_accountsaccounts_ida" class="sugar_field" data-id-value="<?php echo $this->_tpl_vars['fields']['bonos_bonos_accountsaccounts_ida']['value']; ?>
+"><?php echo $this->_tpl_vars['fields']['bonos_bonos_accounts_name']['value']; ?>
+</span>
+<?php if (! empty ( $this->_tpl_vars['fields']['bonos_bonos_accountsaccounts_ida']['value'] )): ?></a><?php endif;  endif; ?>
 </td>
 </tr>
 <?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean();  if ($this->_tpl_vars['fieldsUsed'] > 0 && $this->_tpl_vars['fieldsUsed'] != $this->_tpl_vars['fieldsHidden']):  echo $this->_tpl_vars['tableRow']; ?>

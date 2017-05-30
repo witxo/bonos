@@ -52,12 +52,6 @@ array (
             'name' => 'numerobono',
             'label' => 'LBL_NUMEROBONO',
           ),
-          1 => 
-          array (
-            'name' => 'alumno',
-            'studio' => 'visible',
-            'label' => 'LBL_ALUMNO',
-          ),
         ),
         1 => 
         array (
@@ -79,6 +73,13 @@ array (
           array (
             'name' => 'inactivo',
             'label' => 'LBL_INACTIVO',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'bonos_bonos_accounts_name',
           ),
         ),
       ),
