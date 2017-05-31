@@ -43,6 +43,7 @@
 <input type="hidden" name="full_form" value="">
 <input type="hidden" name="user_invitees" id="user_invitees">
 <input type="hidden" name="contact_invitees" id="contact_invitees">
+<input type="hidden" name="account_invitees" id="account_invitees">
 <input type="hidden" name="lead_invitees" id="lead_invitees">
 <input type="hidden" name="send_invites" id="send_invites">
 

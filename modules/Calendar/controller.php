@@ -71,6 +71,7 @@ class CalendarController extends SugarController
                         
         }else if (!empty($_REQUEST['repeat_type']) && !empty($_REQUEST['date_start'])) {
         
+          $GLOBALS['log']->fatal("Repetimos");
             $params = array(
                     'type' => $_REQUEST['repeat_type'],
                     'interval' => $_REQUEST['repeat_interval'],
@@ -82,6 +83,8 @@ class CalendarController extends SugarController
             $repeatArr = CalendarUtils::build_repeat_sequence($_REQUEST['date_start'], $params);            
             $limit = SugarConfig::getInstance()->get('calendar.max_repeat_count', 1000);
             
+           
+          
             if (count($repeatArr) > ($limit - 1)) {
                 ob_clean();
                 $jsonData = array(
@@ -122,13 +125,17 @@ class CalendarController extends SugarController
                     CalendarUtils::markRepeatDeleted($bean);
                 }
                 if (isset($repeatArr) && is_array($repeatArr) && count($repeatArr) > 0) {
-                    $repeatCreated = CalendarUtils::save_repeat_activities($bean, $repeatArr);
+                       $repeatCreated = CalendarUtils::save_repeat_activities($bean, $repeatArr);
                 }
             }    
                     
-            $bean->retrieve($record);                                
+            $bean->retrieve($record);    
+
             $jsonData = CalendarUtils::get_sendback_array($bean);    
-                    
+                                         $GLOBALS['log']->fatal($jsonData);
+          
+  
+          
             if (isset($repeatCreated) && is_array($repeatCreated)) {
                 $jsonData = array_merge($jsonData, array('repeat' => $repeatCreated));
             }

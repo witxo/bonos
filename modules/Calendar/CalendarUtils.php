@@ -370,6 +370,23 @@ class CalendarUtils {
 		";
 		$leads_filled = false;
 
+      
+      
+      	$GLOBALS['log']->error('Aqui estamos');
+      
+		$qu = "SELECT * FROM {$bean->rel_accounts_table} WHERE deleted = 0 AND {$lower_name}_id = '{$id}'";
+		$re = $db->query($qu);
+		$accounts_rel_arr = array();
+		while($ro = $db->fetchByAssoc($re))
+			$accounts_rel_arr[] = $ro['account_id'];
+		$qu_accounts = "
+				INSERT INTO {$bean->rel_accounts_table}
+				(id,account_id,{$lower_name}_id,date_modified)
+				VALUES
+		";
+		$accounts_filled = false;      
+      
+      
 		$arr = array();
 		$i = 0;
 		foreach($time_arr as $date_start){
@@ -405,6 +422,12 @@ class CalendarUtils {
 					$qu_leads .= "('".create_guid()."','{$lead_id}','{$clone->id}','{$date_modified}')";
 					$leads_filled = true;
 				}
+				foreach($accounts_rel_arr as $account_id){
+					if($accounts_filled)
+						$qu_accounts .= ",".PHP_EOL;
+					$qu_accounts .= "('".create_guid()."','{$account_id}','{$clone->id}','{$date_modified}')";
+					$accounts_filled = true;
+				}              
 				if($i < 44){
 					$clone->date_start = $date_start;
 					$clone->date_end = $date_end;
@@ -423,6 +446,9 @@ class CalendarUtils {
 		if ($leads_filled) {
 			$db->query($qu_leads);
 		}
+		if ($accounts_filled) {
+			$db->query($qu_accounts);
+		}      
 		
 		vCal::cache_sugar_vcal($GLOBALS['current_user']);
 		return $arr;
@@ -452,6 +478,7 @@ class CalendarUtils {
 			$db->query("UPDATE {$bean->rel_users_table} SET deleted = 1, date_modified = '{$date_modified}' WHERE {$lower_name}_id = '{$id}'");
 			$db->query("UPDATE {$bean->rel_contacts_table} SET deleted = 1, date_modified = '{$date_modified}' WHERE {$lower_name}_id = '{$id}'");
 			$db->query("UPDATE {$bean->rel_leads_table} SET deleted = 1, date_modified = '{$date_modified}' WHERE {$lower_name}_id = '{$id}'");
+			$db->query("UPDATE {$bean->rel_accounts_table} SET deleted = 1, date_modified = '{$date_modified}' WHERE {$lower_name}_id = '{$id}'");
 		}
 		vCal::cache_sugar_vcal($GLOBALS['current_user']);
 	}

@@ -1,5 +1,5 @@
 <?php
- // created: 2017-05-26 17:59:47
+ // created: 2017-05-31 13:19:40
 $layout_defs["Accounts"]["subpanel_setup"]['meetings_accounts_1'] = array (
   'order' => 100,
   'module' => 'Meetings',

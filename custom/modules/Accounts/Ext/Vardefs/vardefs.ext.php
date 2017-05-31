@@ -2,7 +2,7 @@
  //WARNING: The contents of this file are auto-generated
 
 
-// created: 2017-05-26 17:59:47
+// created: 2017-05-31 13:19:40
 $dictionary["Account"]["fields"]["meetings_accounts_1"] = array (
   'name' => 'meetings_accounts_1',
   'type' => 'link',
@@ -212,18 +212,6 @@ $dictionary['Account']['fields']['recibosino_c']['labelValue']='Recibo Si/No';
 $dictionary['Account']['fields']['cif_c']['labelValue']='CIF/NIF';
 
  
-
-// created: 2017-05-26 18:02:09
-$dictionary["Account"]["fields"]["meetings_accounts_2"] = array (
-  'name' => 'meetings_accounts_2',
-  'type' => 'link',
-  'relationship' => 'meetings_accounts_2',
-  'source' => 'non-db',
-  'module' => 'Meetings',
-  'bean_name' => 'Meeting',
-  'vname' => 'LBL_MEETINGS_ACCOUNTS_2_FROM_MEETINGS_TITLE',
-);
-
 
  // created: 2016-09-21 22:33:16
 $dictionary['Account']['fields']['numero_c']['labelValue']='Numero';

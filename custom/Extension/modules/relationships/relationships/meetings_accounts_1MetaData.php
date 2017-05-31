@@ -1,5 +1,5 @@
 <?php
-// created: 2017-05-26 17:59:47
+// created: 2017-05-31 13:19:40
 $dictionary["meetings_accounts_1"] = array (
   'true_relationship_type' => 'many-to-many',
   'from_studio' => true,

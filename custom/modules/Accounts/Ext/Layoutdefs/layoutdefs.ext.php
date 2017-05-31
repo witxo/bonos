@@ -2,7 +2,7 @@
  //WARNING: The contents of this file are auto-generated
 
 
- // created: 2017-05-26 17:59:47
+ // created: 2017-05-31 13:19:40
 $layout_defs["Accounts"]["subpanel_setup"]['meetings_accounts_1'] = array (
   'order' => 100,
   'module' => 'Meetings',
@@ -293,30 +293,6 @@ $layout_defs["Accounts"]["subpanel_setup"]["accounts_fact_facturas"] = array (
 );
 
 
- // created: 2017-05-26 18:02:09
-$layout_defs["Accounts"]["subpanel_setup"]['meetings_accounts_2'] = array (
-  'order' => 100,
-  'module' => 'Meetings',
-  'subpanel_name' => 'default',
-  'sort_order' => 'asc',
-  'sort_by' => 'id',
-  'title_key' => 'LBL_MEETINGS_ACCOUNTS_2_FROM_MEETINGS_TITLE',
-  'get_subpanel_data' => 'meetings_accounts_2',
-  'top_buttons' => 
-  array (
-    0 => 
-    array (
-      'widget_class' => 'SubPanelTopButtonQuickCreate',
-    ),
-    1 => 
-    array (
-      'widget_class' => 'SubPanelTopSelectButton',
-      'mode' => 'MultiSelect',
-    ),
-  ),
-);
-
-
 // created: 2014-01-15 19:06:15
 $layout_defs["Accounts"]["subpanel_setup"]["accounts_accounts"] = array (
   'order' => 100,
@@ -343,6 +319,10 @@ $layout_defs["Accounts"]["subpanel_setup"]["accounts_accounts"] = array (
 
 //auto-generated file DO NOT EDIT
 $layout_defs['Accounts']['subpanel_setup']['accounts_fact_facturas']['override_subpanel_name'] = 'Account_subpanel_accounts_fact_facturas';
+
+
+//auto-generated file DO NOT EDIT
+$layout_defs['Accounts']['subpanel_setup']['bonos_bonos_accounts']['override_subpanel_name'] = 'Account_subpanel_bonos_bonos_accounts';
 
 
 //auto-generated file DO NOT EDIT

@@ -1,6 +1,4 @@
 <?php
-// created: 2017-05-26 18:06:49
+// created: 2017-05-30 17:40:27
 $mod_strings = array (
-  'LBL_PROFESOR_ACCOUNT_ID' => 'Profesor (relacionado Cuenta ID)',
-  'LBL_PROFESOR' => 'Profesor',
 );

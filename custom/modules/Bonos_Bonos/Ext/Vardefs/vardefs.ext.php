@@ -35,4 +35,9 @@ $dictionary["Bonos_Bonos"]["fields"]["bonos_bonos_accountsaccounts_ida"] = array
   'vname' => 'LBL_BONOS_BONOS_ACCOUNTS_FROM_BONOS_BONOS_TITLE',
 );
 
+
+ // created: 2017-05-30 13:37:34
+$dictionary['Bonos_Bonos']['fields']['numerobono']['required']=false;
+
+ 
 ?>

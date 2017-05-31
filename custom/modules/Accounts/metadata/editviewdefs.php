@@ -238,7 +238,6 @@ array (
             'name' => 'cantidad_recibo_c',
             'label' => 'LBL_CANTIDAD_RECIBO',
           ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel2' => 
@@ -250,7 +249,6 @@ array (
             'name' => 'ncp_entregado_c',
             'label' => 'LBL_NCP_ENTREGADO',
           ),
-          1 => '',
         ),
         1 => 
         array (
@@ -259,7 +257,6 @@ array (
             'name' => 'ncp_escaneado_c',
             'label' => 'LBL_NCP_ESCANEADO',
           ),
-          1 => '',
         ),
         2 => 
         array (
@@ -268,7 +265,6 @@ array (
             'name' => 'ncp_firmado_c',
             'label' => 'LBL_NCP_FIRMADO',
           ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel3' => 
@@ -280,7 +276,6 @@ array (
             'name' => 'nca_entregado_c',
             'label' => 'LBL_NCA_ENTREGADO',
           ),
-          1 => '',
         ),
         1 => 
         array (
@@ -289,7 +284,6 @@ array (
             'name' => 'nca_escaneado_c',
             'label' => 'LBL_NCA_ESCANEADO',
           ),
-          1 => '',
         ),
         2 => 
         array (
@@ -298,7 +292,6 @@ array (
             'name' => 'nca_firmado_c',
             'label' => 'LBL_NCA_FIRMADO',
           ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel4' => 
@@ -310,7 +303,6 @@ array (
             'name' => 'nuc_entregado_c',
             'label' => 'LBL_NUC_ENTREGADO',
           ),
-          1 => '',
         ),
         1 => 
         array (
@@ -319,7 +311,6 @@ array (
             'name' => 'nuc_escaneado_c',
             'label' => 'LBL_NUC_ESCANEADO',
           ),
-          1 => '',
         ),
         2 => 
         array (
@@ -328,7 +319,6 @@ array (
             'name' => 'nuc_firmado_c',
             'label' => 'LBL_NUC_FIRMADO',
           ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel5' => 
@@ -340,7 +330,6 @@ array (
             'name' => 'blog_entregado_c',
             'label' => 'LBL_BLOG_ENTREGADO',
           ),
-          1 => '',
         ),
         1 => 
         array (
@@ -349,7 +338,6 @@ array (
             'name' => 'blog_escaneado_c',
             'label' => 'LBL_BLOG_ESCANEADO',
           ),
-          1 => '',
         ),
         2 => 
         array (
@@ -358,7 +346,6 @@ array (
             'name' => 'blog_firmado_c',
             'label' => 'LBL_BLOG_FIRMADO',
           ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel6' => 
@@ -370,7 +357,6 @@ array (
             'name' => 'prev_entregado_c',
             'label' => 'LBL_PREV_ENTREGADO',
           ),
-          1 => '',
         ),
         1 => 
         array (
@@ -379,7 +365,6 @@ array (
             'name' => 'prev_escaneado_c',
             'label' => 'LBL_PREV_ESCANEADO',
           ),
-          1 => '',
         ),
         2 => 
         array (
@@ -388,7 +373,6 @@ array (
             'name' => 'prev_firmado_c',
             'label' => 'LBL_PREV_FIRMADO',
           ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel7' => 
@@ -400,7 +384,6 @@ array (
             'name' => 'pen_entregado_c',
             'label' => 'LBL_PEN_ENTREGADO',
           ),
-          1 => '',
         ),
         1 => 
         array (
@@ -409,7 +392,6 @@ array (
             'name' => 'pen_escaneado_c',
             'label' => 'LBL_PEN_ESCANEADO',
           ),
-          1 => '',
         ),
         2 => 
         array (
@@ -418,7 +400,6 @@ array (
             'name' => 'pen_firmado_c',
             'label' => 'LBL_PEN_FIRMADO',
           ),
-          1 => '',
         ),
       ),
     ),

@@ -1486,16 +1486,6 @@
       'id' => 'Accountscif_c',
       'custom_module' => 'Accounts',
     ),
-    'meetings_accounts_2' => 
-    array (
-      'name' => 'meetings_accounts_2',
-      'type' => 'link',
-      'relationship' => 'meetings_accounts_2',
-      'source' => 'non-db',
-      'module' => 'Meetings',
-      'bean_name' => 'Meeting',
-      'vname' => 'LBL_MEETINGS_ACCOUNTS_2_FROM_MEETINGS_TITLE',
-    ),
     'numero_c' => 
     array (
       'labelValue' => 'Numero',

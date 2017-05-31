@@ -1,5 +1,5 @@
 <?php
-// created: 2017-05-30 13:29:58
+// created: 2017-05-31 17:12:27
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Creado:',
@@ -191,8 +191,8 @@ $mod_strings = array (
   'LBL_PEN_ESCANEADO' => 'Escaneado',
   'LBL_PEN_ENTREGADO' => 'Entregado',
   'LBL_CON_CONTRATOS_ACCOUNTS_FROM_CON_CONTRATOS_TITLE' => 'Contratos',
+  'LBL_BONOS_BONOS_ACCOUNTS_FROM_BONOS_BONOS_TITLE' => 'Bonos',
   'LBL_MEETINGS_ACCOUNTS_1_FROM_MEETINGS_TITLE' => 'Reuniones',
   'LBL_MEETINGS_ACCOUNTS_2_FROM_MEETINGS_TITLE' => 'Reuniones',
   'LBL_ACCOUNTS_BONOS_BONOS_1_FROM_BONOS_BONOS_TITLE' => 'Bonos',
-  'LBL_BONOS_BONOS_ACCOUNTS_FROM_BONOS_BONOS_TITLE' => 'Bonos',
 );

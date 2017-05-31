@@ -1,430 +1,409 @@
 <?php
-// created: 2017-05-26 18:25:42
-$viewdefs = array (
-  'Accounts' => 
+$viewdefs ['Accounts'] = 
+array (
+  'DetailView' => 
   array (
-    'DetailView' => 
+    'templateMeta' => 
     array (
-      'templateMeta' => 
+      'form' => 
       array (
-        'form' => 
+        'buttons' => 
         array (
-          'buttons' => 
-          array (
-            0 => 'EDIT',
-            1 => 'DUPLICATE',
-            2 => 'DELETE',
-            3 => 'FIND_DUPLICATES',
-          ),
+          0 => 'EDIT',
+          1 => 'DUPLICATE',
+          2 => 'DELETE',
+          3 => 'FIND_DUPLICATES',
         ),
-        'maxColumns' => '2',
-        'widths' => 
-        array (
-          0 => 
-          array (
-            'label' => '10',
-            'field' => '30',
-          ),
-          1 => 
-          array (
-            'label' => '10',
-            'field' => '30',
-          ),
-        ),
-        'includes' => 
-        array (
-          0 => 
-          array (
-            'file' => 'modules/Accounts/Account.js',
-          ),
-        ),
-        'useTabs' => false,
-        'tabDefs' => 
-        array (
-          'LBL_ACCOUNT_INFORMATION' => 
-          array (
-            'newTab' => false,
-            'panelDefault' => 'expanded',
-          ),
-          'LBL_EDITVIEW_PANEL1' => 
-          array (
-            'newTab' => false,
-            'panelDefault' => 'expanded',
-          ),
-          'LBL_EDITVIEW_PANEL2' => 
-          array (
-            'newTab' => false,
-            'panelDefault' => 'expanded',
-          ),
-          'LBL_EDITVIEW_PANEL3' => 
-          array (
-            'newTab' => false,
-            'panelDefault' => 'expanded',
-          ),
-          'LBL_EDITVIEW_PANEL4' => 
-          array (
-            'newTab' => false,
-            'panelDefault' => 'expanded',
-          ),
-          'LBL_EDITVIEW_PANEL5' => 
-          array (
-            'newTab' => false,
-            'panelDefault' => 'expanded',
-          ),
-          'LBL_EDITVIEW_PANEL6' => 
-          array (
-            'newTab' => false,
-            'panelDefault' => 'expanded',
-          ),
-          'LBL_EDITVIEW_PANEL7' => 
-          array (
-            'newTab' => false,
-            'panelDefault' => 'expanded',
-          ),
-        ),
-        'syncDetailEditViews' => true,
       ),
-      'panels' => 
+      'maxColumns' => '2',
+      'widths' => 
       array (
-        'lbl_account_information' => 
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'includes' => 
+      array (
+        0 => 
+        array (
+          'file' => 'modules/Accounts/Account.js',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'LBL_ACCOUNT_INFORMATION' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL2' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL3' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL4' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL5' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL6' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL7' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+      'syncDetailEditViews' => true,
+    ),
+    'panels' => 
+    array (
+      'lbl_account_information' => 
+      array (
+        0 => 
         array (
           0 => 
           array (
-            0 => 
+            'name' => 'name',
+            'comment' => 'Name of the Company',
+            'label' => 'LBL_NAME',
+            'displayParams' => 
             array (
-              'name' => 'name',
-              'comment' => 'Name of the Company',
-              'label' => 'LBL_NAME',
-              'displayParams' => 
-              array (
-              ),
-            ),
-            1 => 
-            array (
-              'name' => 'phone_office',
-              'comment' => 'The office phone number',
-              'label' => 'LBL_PHONE_OFFICE',
             ),
           ),
           1 => 
           array (
-            0 => 
+            'name' => 'phone_office',
+            'comment' => 'The office phone number',
+            'label' => 'LBL_PHONE_OFFICE',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'website',
+            'type' => 'link',
+            'label' => 'LBL_WEBSITE',
+            'displayParams' => 
             array (
-              'name' => 'website',
-              'type' => 'link',
-              'label' => 'LBL_WEBSITE',
-              'displayParams' => 
-              array (
-                'link_target' => '_blank',
-              ),
-            ),
-            1 => 
-            array (
-              'name' => 'account_type',
-              'comment' => 'The Company is of this type',
-              'label' => 'LBL_TYPE',
+              'link_target' => '_blank',
             ),
           ),
-          2 => 
+          1 => 
           array (
-            0 => 
+            'name' => 'account_type',
+            'comment' => 'The Company is of this type',
+            'label' => 'LBL_TYPE',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'billing_address_street',
+            'label' => 'LBL_BILLING_ADDRESS',
+            'type' => 'address',
+            'displayParams' => 
             array (
-              'name' => 'billing_address_street',
-              'label' => 'LBL_BILLING_ADDRESS',
-              'type' => 'address',
-              'displayParams' => 
-              array (
-                'key' => 'billing',
-              ),
-            ),
-            1 => 
-            array (
-              'name' => 'shipping_address_street',
-              'label' => 'LBL_SHIPPING_ADDRESS',
-              'type' => 'address',
-              'displayParams' => 
-              array (
-                'key' => 'shipping',
-              ),
+              'key' => 'billing',
             ),
           ),
-          3 => 
+          1 => 
           array (
-            0 => 
+            'name' => 'shipping_address_street',
+            'label' => 'LBL_SHIPPING_ADDRESS',
+            'type' => 'address',
+            'displayParams' => 
             array (
-              'name' => 'cif_c',
-              'label' => 'LBL_CIF',
-            ),
-            1 => 
-            array (
-              'name' => 'email1',
-              'studio' => 'false',
-              'label' => 'LBL_EMAIL',
-            ),
-          ),
-          4 => 
-          array (
-            0 => 
-            array (
-              'name' => 'description',
-              'comment' => 'Full text of the note',
-              'label' => 'LBL_DESCRIPTION',
-            ),
-            1 => 
-            array (
-              'name' => 'curso_c',
-              'label' => 'LBL_CURSO',
-            ),
-          ),
-          5 => 
-          array (
-            0 => 
-            array (
-              'name' => 'colegio_c',
-              'label' => 'LBL_COLEGIO',
-            ),
-            1 => 
-            array (
-              'name' => 'asignaturas_c',
-              'studio' => 'visible',
-              'label' => 'LBL_ASIGNATURAS',
-            ),
-          ),
-          6 => 
-          array (
-            0 => 
-            array (
-              'name' => 'alumno_c',
-              'label' => 'LBL_ALUMNO',
-            ),
-            1 => 
-            array (
-              'name' => 'grupo_c',
-              'studio' => 'visible',
-              'label' => 'LBL_GRUPO',
-            ),
-          ),
-          7 => 
-          array (
-            0 => 
-            array (
-              'name' => 'accounts_accounts_1_name',
-            ),
-            1 => 
-            array (
-              'name' => 'created_by_name',
-              'label' => 'LBL_CREATED',
+              'key' => 'shipping',
             ),
           ),
         ),
-        'lbl_editview_panel1' => 
+        3 => 
         array (
           0 => 
           array (
-            0 => 
-            array (
-              'name' => 'recibosino_c',
-              'studio' => 'visible',
-              'label' => 'LBL_RECIBOSINO',
-            ),
-            1 => 
-            array (
-              'name' => 'descripcion_recibo_c',
-              'studio' => 'visible',
-              'label' => 'LBL_DESCRIPCION_RECIBO',
-            ),
+            'name' => 'cif_c',
+            'label' => 'LBL_CIF',
           ),
           1 => 
           array (
-            0 => 
-            array (
-              'name' => 'cantidad_recibo_c',
-              'label' => 'LBL_CANTIDAD_RECIBO',
-            ),
-            1 => '',
+            'name' => 'email1',
+            'studio' => 'false',
+            'label' => 'LBL_EMAIL',
           ),
         ),
-        'lbl_editview_panel2' => 
+        4 => 
         array (
           0 => 
           array (
-            0 => 
-            array (
-              'name' => 'ncp_entregado_c',
-              'label' => 'LBL_NCP_ENTREGADO',
-            ),
-            1 => '',
+            'name' => 'description',
+            'comment' => 'Full text of the note',
+            'label' => 'LBL_DESCRIPTION',
           ),
           1 => 
           array (
-            0 => 
-            array (
-              'name' => 'ncp_escaneado_c',
-              'label' => 'LBL_NCP_ESCANEADO',
-            ),
-            1 => '',
-          ),
-          2 => 
-          array (
-            0 => 
-            array (
-              'name' => 'ncp_firmado_c',
-              'label' => 'LBL_NCP_FIRMADO',
-            ),
-            1 => '',
+            'name' => 'curso_c',
+            'label' => 'LBL_CURSO',
           ),
         ),
-        'lbl_editview_panel3' => 
+        5 => 
         array (
           0 => 
           array (
-            0 => 
-            array (
-              'name' => 'nca_entregado_c',
-              'label' => 'LBL_NCA_ENTREGADO',
-            ),
-            1 => '',
+            'name' => 'colegio_c',
+            'label' => 'LBL_COLEGIO',
           ),
           1 => 
           array (
-            0 => 
-            array (
-              'name' => 'nca_escaneado_c',
-              'label' => 'LBL_NCA_ESCANEADO',
-            ),
-            1 => '',
-          ),
-          2 => 
-          array (
-            0 => 
-            array (
-              'name' => 'nca_firmado_c',
-              'label' => 'LBL_NCA_FIRMADO',
-            ),
-            1 => '',
+            'name' => 'asignaturas_c',
+            'studio' => 'visible',
+            'label' => 'LBL_ASIGNATURAS',
           ),
         ),
-        'lbl_editview_panel4' => 
+        6 => 
         array (
           0 => 
           array (
-            0 => 
-            array (
-              'name' => 'nuc_entregado_c',
-              'label' => 'LBL_NUC_ENTREGADO',
-            ),
-            1 => '',
+            'name' => 'alumno_c',
+            'label' => 'LBL_ALUMNO',
           ),
           1 => 
           array (
-            0 => 
-            array (
-              'name' => 'nuc_escaneado_c',
-              'label' => 'LBL_NUC_ESCANEADO',
-            ),
-            1 => '',
-          ),
-          2 => 
-          array (
-            0 => 
-            array (
-              'name' => 'nuc_firmado_c',
-              'label' => 'LBL_NUC_FIRMADO',
-            ),
-            1 => '',
+            'name' => 'grupo_c',
+            'studio' => 'visible',
+            'label' => 'LBL_GRUPO',
           ),
         ),
-        'lbl_editview_panel5' => 
+        7 => 
         array (
           0 => 
           array (
-            0 => 
-            array (
-              'name' => 'blog_entregado_c',
-              'label' => 'LBL_BLOG_ENTREGADO',
-            ),
-            1 => '',
+            'name' => 'accounts_accounts_1_name',
           ),
           1 => 
           array (
-            0 => 
-            array (
-              'name' => 'blog_escaneado_c',
-              'label' => 'LBL_BLOG_ESCANEADO',
-            ),
-            1 => '',
-          ),
-          2 => 
-          array (
-            0 => 
-            array (
-              'name' => 'blog_firmado_c',
-              'label' => 'LBL_BLOG_FIRMADO',
-            ),
-            1 => '',
+            'name' => 'created_by_name',
+            'label' => 'LBL_CREATED',
           ),
         ),
-        'lbl_editview_panel6' => 
+      ),
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
         array (
           0 => 
           array (
-            0 => 
-            array (
-              'name' => 'prev_entregado_c',
-              'label' => 'LBL_PREV_ENTREGADO',
-            ),
-            1 => '',
+            'name' => 'recibosino_c',
+            'studio' => 'visible',
+            'label' => 'LBL_RECIBOSINO',
           ),
           1 => 
           array (
-            0 => 
-            array (
-              'name' => 'prev_escaneado_c',
-              'label' => 'LBL_PREV_ESCANEADO',
-            ),
-            1 => '',
-          ),
-          2 => 
-          array (
-            0 => 
-            array (
-              'name' => 'prev_firmado_c',
-              'label' => 'LBL_PREV_FIRMADO',
-            ),
-            1 => '',
+            'name' => 'descripcion_recibo_c',
+            'studio' => 'visible',
+            'label' => 'LBL_DESCRIPCION_RECIBO',
           ),
         ),
-        'lbl_editview_panel7' => 
+        1 => 
         array (
           0 => 
           array (
-            0 => 
-            array (
-              'name' => 'pen_entregado_c',
-              'label' => 'LBL_PEN_ENTREGADO',
-            ),
-            1 => '',
+            'name' => 'cantidad_recibo_c',
+            'label' => 'LBL_CANTIDAD_RECIBO',
           ),
-          1 => 
+        ),
+      ),
+      'lbl_editview_panel2' => 
+      array (
+        0 => 
+        array (
+          0 => 
           array (
-            0 => 
-            array (
-              'name' => 'pen_escaneado_c',
-              'label' => 'LBL_PEN_ESCANEADO',
-            ),
-            1 => '',
+            'name' => 'ncp_entregado_c',
+            'label' => 'LBL_NCP_ENTREGADO',
           ),
-          2 => 
+        ),
+        1 => 
+        array (
+          0 => 
           array (
-            0 => 
-            array (
-              'name' => 'pen_firmado_c',
-              'label' => 'LBL_PEN_FIRMADO',
-            ),
-            1 => '',
+            'name' => 'ncp_escaneado_c',
+            'label' => 'LBL_NCP_ESCANEADO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ncp_firmado_c',
+            'label' => 'LBL_NCP_FIRMADO',
+          ),
+        ),
+      ),
+      'lbl_editview_panel3' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'nca_entregado_c',
+            'label' => 'LBL_NCA_ENTREGADO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'nca_escaneado_c',
+            'label' => 'LBL_NCA_ESCANEADO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'nca_firmado_c',
+            'label' => 'LBL_NCA_FIRMADO',
+          ),
+        ),
+      ),
+      'lbl_editview_panel4' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'nuc_entregado_c',
+            'label' => 'LBL_NUC_ENTREGADO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'nuc_escaneado_c',
+            'label' => 'LBL_NUC_ESCANEADO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'nuc_firmado_c',
+            'label' => 'LBL_NUC_FIRMADO',
+          ),
+        ),
+      ),
+      'lbl_editview_panel5' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'blog_entregado_c',
+            'label' => 'LBL_BLOG_ENTREGADO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'blog_escaneado_c',
+            'label' => 'LBL_BLOG_ESCANEADO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'blog_firmado_c',
+            'label' => 'LBL_BLOG_FIRMADO',
+          ),
+        ),
+      ),
+      'lbl_editview_panel6' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'prev_entregado_c',
+            'label' => 'LBL_PREV_ENTREGADO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'prev_escaneado_c',
+            'label' => 'LBL_PREV_ESCANEADO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'prev_firmado_c',
+            'label' => 'LBL_PREV_FIRMADO',
+          ),
+        ),
+      ),
+      'lbl_editview_panel7' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pen_entregado_c',
+            'label' => 'LBL_PEN_ENTREGADO',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pen_escaneado_c',
+            'label' => 'LBL_PEN_ESCANEADO',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pen_firmado_c',
+            'label' => 'LBL_PEN_FIRMADO',
           ),
         ),
       ),
     ),
   ),
 );
+?>

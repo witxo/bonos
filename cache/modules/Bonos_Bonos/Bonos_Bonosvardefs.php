@@ -208,7 +208,7 @@
     ),
     'numerobono' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'numerobono',
       'vname' => 'LBL_NUMEROBONO',
       'type' => 'varchar',
