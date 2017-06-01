@@ -40,4 +40,3 @@
 <input type="hidden" name="user_invitees">
 <input type="hidden" name="contact_invitees">
 <input type="hidden" name="lead_invitees">
-<input type="hidden" name="account_invitees">

@@ -286,48 +286,6 @@ function handleSave($prefix,$redirect=true, $useRequired=false) {
 	    }else{
 	    	///////////////////////////////////////////////////////////////////////////
 	    	////	REMOVE INVITEE RELATIONSHIPS
-
-          
-         
-	if(!empty($_POST['account_invitees'])) {
-      $GLOBALS['log']->fatal('lleno');  
-	    	   $accountInvitees = explode(',', trim($_POST['account_invitees'], ','));
-	    	} else {
-	    	   $accountInvitees = array();
-	    	}
-
-	        // Calculate which users to flag as deleted and which to add
-	        $deleteAccounts = array();
-	    	$focus->load_relationship('meetings_accounts_1');
-	    	// Get all users for the meeting
-	    	$q = 'SELECT mu.account_id, mu.accept_status FROM meetings_accounts mu WHERE mu.meeting_id = \''.$focus->id.'\'';
-	    	$r = $focus->db->query($q);
-	    	$acceptStatusAccounts = array();
-	    	while($a = $focus->db->fetchByAssoc($r)) {
-	    		  if(!in_array($a['user_id'], $accountInvitees)) {
-	    		  	 $deleteAccounts[$a['user_id']] = $a['user_id'];
-	    		  } else {
-	    		     $acceptStatusAccounts[$a['user_id']] = $a['accept_status'];
-	    		  }
-	    	}
-
-	    	if(count($deleteAccounts) > 0) {
-	    		$sql = '';
-	    		foreach($deleteAccounts as $u) {
-	    		        $sql .= ",'" . $u . "'";
-	    		}
-	    		$sql = substr($sql, 1);
-	    		// We could run a delete SQL statement here, but will just mark as deleted instead
-	    		$sql = "UPDATE meetings_accounts set deleted = 1 where account_id in ($sql) AND meeting_id = '". $focus->id . "'";
-	    		$focus->db->query($sql);
-	    	}          
-          
-          
-          
-          
-          
-          
-          
 	    	if(!empty($_POST['user_invitees'])) {
 	    	   $userInvitees = explode(',', trim($_POST['user_invitees'], ','));
 	    	} else {
@@ -431,11 +389,6 @@ function handleSave($prefix,$redirect=true, $useRequired=false) {
 	    	$focus->contacts_arr = $contactInvitees;
 	        $focus->leads_arr = array();
 	    	$focus->leads_arr = $leadInvitees;
-          
-  	        $focus->accounts_arr = array();
-	    	$focus->accounts_arr = $accountInvitees;
-          
-          //$GLOBALS['log']->fatal(print_r($accountInvitees)); 
 
 	    	if(!empty($_POST['parent_id']) && $_POST['parent_type'] == 'Contacts') {
 	    		$focus->contacts_arr[] = $_POST['parent_id'];
@@ -443,14 +396,6 @@ function handleSave($prefix,$redirect=true, $useRequired=false) {
 	        if(!empty($_POST['parent_id']) && $_POST['parent_type'] == 'Leads') {
 	    		$focus->leads_arr[] = $_POST['parent_id'];
 	    	}
-          
-	        if(!empty($_POST['parent_id']) && $_POST['parent_type'] == 'Accounts') {
-	    		$focus->accounts_arr[] = $_POST['parent_id'];
-	    	}          
-          
-          
-          
-          
 	    	// Call the Meeting module's save function to handle saving other fields besides
 	    	// the users and contacts relationships
             $focus->update_vcal = false;    // Bug #49195 : don't update vcal b/s related users aren't saved yet, create vcal cache below
@@ -527,29 +472,6 @@ function handleSave($prefix,$redirect=true, $useRequired=false) {
 	    			$focus->db->query($qU);
 	    		}
 	    	}
-          
-	        // Process accounts
-	    	$existing_accounts =  array();
-	    	if(!empty($_POST['existing_account_invitees'])) {
-	    	   $existing_contacts =  explode(",", trim($_POST['existing_account_invitees'], ','));
-	    	}
-
-	    	foreach($focus->accounts_arr as $account_id) {
-	    		if(empty($account_id) || isset($existing_accounts[$account_id]) || isset($deleteAccounts[$account_id])) {
-	    			continue;
-	    		}
-
-	    		if(!isset($acceptStatusAccounts[$account_id])) {
-                  print_r($focus);
-	    		    $focus->accounts->add($account_id);
-	    		} else if (!$focus->date_changed) {
-	    			// update query to preserve accept_status
-	    			$qU  = 'UPDATE meetings_accounts SET deleted = 0, accept_status = \''.$acceptStatusAccounts[$contact_id].'\' ';
-	    			$qU .= 'WHERE meeting_id = \''.$focus->id.'\' ';
-	    			$qU .= 'AND account_id = \''.$account_id.'\'';
-	    			$focus->db->query($qU);
-	    		}
-	    	}          
 
             // Bug #49195 : update vcal
             vCal::cache_sugar_vcal($current_user);

@@ -2,7 +2,7 @@
  //WARNING: The contents of this file are auto-generated
 
 
-// created: 2017-05-31 13:19:40
+// created: 2017-05-31 17:37:56
 $dictionary["Account"]["fields"]["meetings_accounts_1"] = array (
   'name' => 'meetings_accounts_1',
   'type' => 'link',
@@ -116,7 +116,7 @@ $dictionary['Account']['fields']['nuc_firmado_c']['labelValue']='Firmado';
 
  
 
-// created: 2017-05-30 13:29:57
+// created: 2017-06-01 18:29:55
 $dictionary["Account"]["fields"]["bonos_bonos_accounts"] = array (
   'name' => 'bonos_bonos_accounts',
   'type' => 'link',

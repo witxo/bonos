@@ -2,7 +2,7 @@
  //WARNING: The contents of this file are auto-generated
 
 
-// created: 2017-05-31 13:19:40
+// created: 2017-05-31 17:37:56
 $dictionary["Meeting"]["fields"]["meetings_accounts_1"] = array (
   'name' => 'meetings_accounts_1',
   'type' => 'link',

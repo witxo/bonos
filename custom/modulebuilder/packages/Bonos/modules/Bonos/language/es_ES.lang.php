@@ -71,4 +71,5 @@ $mod_strings = array (
   'LBL_INACTIVO' => 'Inactivo',
   'LBL_ALUMNO' => 'Alumno',
   'LBL_BONOS_BONOS_ACCOUNTS_FROM_ACCOUNTS_TITLE' => 'Alumno',
+  'LBL_REPETICIONES' => 'Repeticiones',
 );

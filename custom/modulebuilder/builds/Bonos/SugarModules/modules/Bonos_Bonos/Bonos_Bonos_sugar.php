@@ -67,6 +67,7 @@ class Bonos_Bonos_sugar extends Basic {
 		var $precio;
 		var $fechacaducidad;
 		var $inactivo;
+		var $repeticiones;
 		function Bonos_Bonos_sugar(){	
 		parent::Basic();
 	}

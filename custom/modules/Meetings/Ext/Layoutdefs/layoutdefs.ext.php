@@ -2,7 +2,7 @@
  //WARNING: The contents of this file are auto-generated
 
 
- // created: 2017-05-31 13:19:40
+ // created: 2017-05-31 17:37:56
 $layout_defs["Meetings"]["subpanel_setup"]['meetings_accounts_1'] = array (
   'order' => 100,
   'module' => 'Accounts',
@@ -24,5 +24,9 @@ $layout_defs["Meetings"]["subpanel_setup"]['meetings_accounts_1'] = array (
     ),
   ),
 );
+
+
+//auto-generated file DO NOT EDIT
+$layout_defs['Meetings']['subpanel_setup']['meetings_accounts_1']['override_subpanel_name'] = 'Meeting_subpanel_meetings_accounts_1';
 
 ?>

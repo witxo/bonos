@@ -42,6 +42,10 @@ array (
             'name' => 'numerobono',
             'label' => 'LBL_NUMEROBONO',
           ),
+          1 => 
+          array (
+            'name' => 'bonos_bonos_accounts_name',
+          ),
         ),
         1 => 
         array (
@@ -52,29 +56,21 @@ array (
           ),
           1 => 
           array (
-            'name' => 'date_entered',
-            'comment' => 'Date record created',
-            'label' => 'LBL_DATE_ENTERED',
+            'name' => 'fechacaducidad',
+            'label' => 'LBL_FECHACADUCIDAD',
           ),
         ),
         2 => 
         array (
           0 => 
           array (
-            'name' => 'fechacaducidad',
-            'label' => 'LBL_FECHACADUCIDAD',
-          ),
-          1 => 
-          array (
             'name' => 'inactivo',
             'label' => 'LBL_INACTIVO',
           ),
-        ),
-        3 => 
-        array (
-          0 => 
+          1 => 
           array (
-            'name' => 'bonos_bonos_accounts_name',
+            'name' => 'repeticiones',
+            'label' => 'LBL_REPETICIONES',
           ),
         ),
       ),

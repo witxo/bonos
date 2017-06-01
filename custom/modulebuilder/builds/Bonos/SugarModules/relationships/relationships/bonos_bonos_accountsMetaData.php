@@ -1,5 +1,5 @@
 <?php
-// created: 2017-05-30 13:29:57
+// created: 2017-06-01 18:29:55
 $dictionary["bonos_bonos_accounts"] = array (
   'true_relationship_type' => 'one-to-many',
   'relationships' => 

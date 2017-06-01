@@ -39,7 +39,7 @@ $vardefs = array (
   array (
     'numerobono' => 
     array (
-      'required' => true,
+      'required' => false,
       'name' => 'numerobono',
       'vname' => 'LBL_NUMEROBONO',
       'type' => 'varchar',
@@ -146,6 +146,30 @@ $vardefs = array (
       'audited' => false,
       'reportable' => true,
       'size' => '20',
+    ),
+    'repeticiones' => 
+    array (
+      'required' => false,
+      'name' => 'repeticiones',
+      'vname' => 'LBL_REPETICIONES',
+      'type' => 'int',
+      'massupdate' => 0,
+      'no_default' => false,
+      'comments' => '',
+      'help' => '',
+      'importable' => 'false',
+      'duplicate_merge' => 'disabled',
+      'duplicate_merge_dom_value' => '0',
+      'audited' => false,
+      'reportable' => true,
+      'unified_search' => false,
+      'merge_filter' => 'disabled',
+      'len' => '255',
+      'size' => '20',
+      'enable_range_search' => false,
+      'disable_num_format' => '',
+      'min' => false,
+      'max' => false,
     ),
   ),
   'relationships' => 

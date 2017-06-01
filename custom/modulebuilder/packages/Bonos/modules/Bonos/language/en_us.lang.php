@@ -70,4 +70,5 @@ $mod_strings = array (
   'LBL_FECHACADUCIDAD' => 'Fecha Caducidad',
   'LBL_INACTIVO' => 'Inactivo',
   'LBL_ALUMNO' => 'Alumno',
+  'LBL_REPETICIONES' => 'Repeticiones',
 );

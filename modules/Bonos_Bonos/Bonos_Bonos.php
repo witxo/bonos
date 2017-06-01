@@ -44,10 +44,28 @@ class Bonos_Bonos extends Bonos_Bonos_sugar {
 		parent::Bonos_Bonos_sugar();
 	}
 	
-    function save($check_notify = FALSE) {
+  
+  function create_new_bono($numbono, $precio, $cuenta)
+  {
+    // create a new Call object (represents a record)
+$bono = new Bonos_Bonos();
+
+    $rel_name = 'bonos_bonos_accounts';
+    $bono->numerobono = $numbono;
+    $bono->precio = $precio;
+    $bono->account_id_c = $cuenta;
+    $bono->load_relationship($rel_name);
+    $bono->$rel_name->add($cuenta);  
+    $bono->bonos_bonos_accountsaccounts_ida = $cuenta;
+     $GLOBALS['log']->fatal($cuenta);
+// this is called in the end to save entry, and your new record in Calls will be created with data above
+$bono->save();
+  }
+  
+      function save($check_notify = FALSE) {
     
-    $newnumber=2017000000;
-$db = $GLOBALS['db'];
+  		$newnumber=2017000000;
+		$db = $GLOBALS['db'];
  
     $id =  $this->bean->id;
  
@@ -60,8 +78,30 @@ if ($this->numerobono == '')
 {
 	$this->numerobono = $newnumber + 1; // is this correct if i want the custom_id_c to increment?    
 }
+        $rel_name = 'bonos_bonos_accounts';
+        $this->load_relationship($rel_name);
+        
+       
+       
+        $accounts = $this->$rel_name->getBeans();
+
+        foreach($accounts as $account){
+    		$accountid = $account->bonos_bonos_accountsaccounts_ida;
+        }
+        
+
+        
+       
+        if ($this->repeticiones > 0)
+        {
+          for ($i=1;$i<$this->repeticiones;$i++)
+          {
+ 
+            $this->create_new_bono ($this->numerobono+$i, $this->precio,$this->bonos_bonos_accountsaccounts_ida);
+          }
+          
+        }
     parent::save($check_notify);
   }
-  
 }
 ?>

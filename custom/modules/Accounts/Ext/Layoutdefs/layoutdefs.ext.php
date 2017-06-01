@@ -2,7 +2,7 @@
  //WARNING: The contents of this file are auto-generated
 
 
- // created: 2017-05-31 13:19:40
+ // created: 2017-05-31 17:37:56
 $layout_defs["Accounts"]["subpanel_setup"]['meetings_accounts_1'] = array (
   'order' => 100,
   'module' => 'Meetings',
@@ -243,7 +243,7 @@ $layout_defs["Accounts"]["subpanel_setup"]["stive_ordenes_accounts"] = array (
 
 
 
- // created: 2017-05-30 13:29:57
+ // created: 2017-06-01 18:29:55
 $layout_defs["Accounts"]["subpanel_setup"]['bonos_bonos_accounts'] = array (
   'order' => 100,
   'module' => 'Bonos_Bonos',

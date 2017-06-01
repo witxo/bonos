@@ -1,6 +1,8 @@
 <?php
-// created: 2017-05-31 13:19:42
+// created: 2017-06-01 18:59:19
 $mod_strings = array (
+  'LBL_ASSIGNED_TO_ID' => 'Asignado a Usuario con Id',
+  'LBL_ASSIGNED_TO_NAME' => 'Usuario',
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Fecha de Creación',
   'LBL_DATE_MODIFIED' => 'Última Modificación',
@@ -17,8 +19,6 @@ $mod_strings = array (
   'LBL_LIST_NAME' => 'Nombre',
   'LBL_EDIT_BUTTON' => 'Editar',
   'LBL_REMOVE' => 'Quitar',
-  'LBL_ASSIGNED_TO_ID' => 'Asignado a Usuario con Id',
-  'LBL_ASSIGNED_TO_NAME' => 'Usuario',
   'LBL_LIST_FORM_TITLE' => 'Bonos Lista',
   'LBL_MODULE_NAME' => 'Bonos',
   'LBL_MODULE_TITLE' => 'Bonos',
@@ -37,4 +37,5 @@ $mod_strings = array (
   'LBL_INACTIVO' => 'Inactivo',
   'LBL_ALUMNO' => 'Alumno',
   'LBL_BONOS_BONOS_ACCOUNTS_FROM_ACCOUNTS_TITLE' => 'Cuentas',
+  'LBL_REPETICIONES' => 'Repeticiones',
 );

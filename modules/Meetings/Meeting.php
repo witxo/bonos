@@ -95,7 +95,6 @@ class Meeting extends SugarBean {
 	var $rel_users_table = "meetings_users";
 	var $rel_contacts_table = "meetings_contacts";
 	var $rel_leads_table = "meetings_leads";
-  	var $rel_accounts_table = "meetings_accounts";
 	var $module_dir = "Meetings";
 	var $object_name = "Meeting";
 
@@ -157,8 +156,6 @@ class Meeting extends SugarBean {
 	// save date_end by calculating user input
 	// this is for calendar
 	function save($check_notify = FALSE) {
-      
-      $GLOBALS['log']->fatal("Salvamos");
 		global $timedate;
 		global $current_user;
 
@@ -679,12 +676,6 @@ class Meeting extends SugarBean {
 			$data_values = array('accept_status'=>$status);
 			$this->set_relationship($this->rel_leads_table, $relate_values, true, true,$data_values);
 		}
-        else if($user->object_name == 'Account')
-		{
-			$relate_values = array('account_id'=>$user->id,'meeting_id'=>$this->id);
-			$data_values = array('accept_status'=>$status);
-			$this->set_relationship($this->rel_accounts_table, $relate_values, true, true,$data_values);
-		}
 	}
 
 
@@ -705,23 +696,11 @@ class Meeting extends SugarBean {
         if(!is_array($this->leads_arr)) {
 			$this->leads_arr =	array();
 		}
-      
-         if(!is_array($this->accounts_arr)) {
-			$this->accounts_arr =	array();
-		}
 
 		foreach($this->users_arr as $user_id) {
 			$notify_user = new User();
 			$notify_user->retrieve($user_id);
 			$notify_user->new_assigned_user_name = $notify_user->full_name;
-			$GLOBALS['log']->info("Notifications: recipient is $notify_user->new_assigned_user_name");
-			$list[$notify_user->id] = $notify_user;
-		}
-      
-      	foreach($this->accounts_arr as $account_id) {
-			$notify_user = new Account();
-			$notify_user->retrieve($account_id);
-			$notify_user->new_assigned_user_name = $notify_user->name;
 			$GLOBALS['log']->info("Notifications: recipient is $notify_user->new_assigned_user_name");
 			$list[$notify_user->id] = $notify_user;
 		}
@@ -828,11 +807,6 @@ class Meeting extends SugarBean {
 	        $this->load_relationship('leads');
 	        if ( !$this->leads->relationship_exists('leads',array('id'=>$this->parent_id)) )
 	            $this->leads->add($this->parent_id);
-	    }
-      	elseif ( $this->parent_type == 'Accounts' ) {
-	        $this->load_relationship('meetings_accounts_1');
-	        if ( !$this->leads->relationship_exists('accounts',array('id'=>$this->parent_id)) )
-	            $this->accounts->add($this->parent_id);
 	    }
 
 	    parent::afterImportSave();

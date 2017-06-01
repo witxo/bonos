@@ -1,5 +1,5 @@
 <?php
- // created: 2017-05-30 13:29:57
+ // created: 2017-06-01 18:29:55
 $layout_defs["Accounts"]["subpanel_setup"]['bonos_bonos_accounts'] = array (
   'order' => 100,
   'module' => 'Bonos_Bonos',
