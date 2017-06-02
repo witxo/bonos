@@ -1,5 +1,5 @@
 <?php
-// created: 2017-06-01 18:59:19
+// created: 2017-06-02 12:23:18
 $mod_strings = array (
   'LBL_ASSIGNED_TO_ID' => 'Assigned User Id',
   'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
@@ -37,5 +37,7 @@ $mod_strings = array (
   'LBL_INACTIVO' => 'Inactivo',
   'LBL_ALUMNO' => 'Alumno',
   'LBL_REPETICIONES' => 'Repeticiones',
+  'LBL_ACCOUNTS_BONOS_BONOS_1_FROM_ACCOUNTS_TITLE' => 'Cuentas',
+  'LBL_MEETINGS_BONOS_BONOS_1_FROM_MEETINGS_TITLE' => 'Reuniones',
   'LBL_BONOS_BONOS_ACCOUNTS_FROM_ACCOUNTS_TITLE' => 'Cuentas',
 );

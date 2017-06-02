@@ -1,3 +1,27 @@
-Thu Jun  1 20:06:10 2017 [29797][1][FATAL] b487a2fc-310f-86b9-6256-51cc20f72a33
-Thu Jun  1 20:07:05 2017 [1092][1][FATAL] c98f9e50-b0cf-faaa-bcb4-52e690ce84cf
-Thu Jun  1 20:07:06 2017 [1092][1][FATAL] c98f9e50-b0cf-faaa-bcb4-52e690ce84cf
+Fri Jun  2 12:03:21 2017 [6630][1][FATAL] SELECT * FROM `meetings_accounts_1_c` WHERE meetings_accounts_1meetings_ida = '93c0d83e-d36b-639f-4c04-593125cceabc'
+Fri Jun  2 12:04:52 2017 [6619][1][FATAL] r
+Fri Jun  2 12:05:28 2017 [21980][1][FATAL] b487a2fc-310f-86b9-6256-51cc20f72a33
+Fri Jun  2 12:07:02 2017 [21980][1][FATAL] 7f4a707a-402c-8f8f-5946-506da7030c30
+Fri Jun  2 12:07:02 2017 [21980][1][FATAL] b487a2fc-310f-86b9-6256-51cc20f72a33
+Fri Jun  2 12:07:15 2017 [18518][1][FATAL] 75e1eb5e-a70b-112d-3020-559e3152a25f
+Fri Jun  2 12:08:37 2017 [6630][1][FATAL] 7f4a707a-402c-8f8f-5946-506da7030c30
+Fri Jun  2 12:08:37 2017 [6630][1][FATAL] b487a2fc-310f-86b9-6256-51cc20f72a33
+Fri Jun  2 12:10:49 2017 [21980][1][FATAL] 7f4a707a-402c-8f8f-5946-506da7030c30
+Fri Jun  2 12:10:49 2017 [21980][1][FATAL] b487a2fc-310f-86b9-6256-51cc20f72a33
+Fri Jun  2 12:12:01 2017 [21980][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_f343ae70-e6f5-1302-f9cb-5463a12a953c.xml
+Fri Jun  2 12:12:02 2017 [21980][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_43c317f2-93e0-b95a-ce55-5463a34a0d9f.xml
+Fri Jun  2 12:12:03 2017 [21980][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_1f07010e-ab8a-d598-f53d-58ad78be97e3.xml
+Fri Jun  2 12:12:04 2017 [21980][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_6c5e9f1b-d88e-bdcf-d989-5463a6872d38.xml
+Fri Jun  2 12:12:04 2017 [21980][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_acebcdb0-6cfd-3c6c-0c98-5463a2c56701.xml
+Fri Jun  2 12:12:04 2017 [21980][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_f055da3c-2af6-3dac-efc0-5464df0e4625.xml
+Fri Jun  2 12:17:28 2017 [25293][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_f343ae70-e6f5-1302-f9cb-5463a12a953c.xml
+Fri Jun  2 12:17:29 2017 [25293][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_43c317f2-93e0-b95a-ce55-5463a34a0d9f.xml
+Fri Jun  2 12:17:29 2017 [25293][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_1f07010e-ab8a-d598-f53d-58ad78be97e3.xml
+Fri Jun  2 12:17:29 2017 [25293][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_6c5e9f1b-d88e-bdcf-d989-5463a6872d38.xml
+Fri Jun  2 12:17:29 2017 [25293][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_acebcdb0-6cfd-3c6c-0c98-5463a2c56701.xml
+Fri Jun  2 12:17:29 2017 [25293][1][FATAL] Unable to return chart data, invalid xml for file cache/xml/cd73cf62-27e8-0db7-2f99-549188524c91_f055da3c-2af6-3dac-efc0-5464df0e4625.xml
+Fri Jun  2 12:17:59 2017 [6619][1][FATAL] SugarPHPMailer encountered an error: No se ha configurado un servidor de correo saliente para el envío de correos. Por favor, configure o seleccione un servidor de correo saliente para la cuenta de correo que está utilizando en Configuración >> Cuenta de Correo.
+Fri Jun  2 12:17:59 2017 [6619][1][FATAL] SugarPHPMailer encountered an error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+Fri Jun  2 12:17:59 2017 [6619][1][FATAL] Notifications: error sending e-mail (method: smtp), (error: SMTP connect() failed. https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting)
+Fri Jun  2 12:18:47 2017 [18518][b0e41f2e-d9be-f4a1-d22a-59283b81e5bf][FATAL] 4d73bddd-53b8-d104-3af2-4f8c48e9b34f
+Fri Jun  2 12:18:47 2017 [18518][b0e41f2e-d9be-f4a1-d22a-59283b81e5bf][FATAL] c98f9e50-b0cf-faaa-bcb4-52e690ce84cf

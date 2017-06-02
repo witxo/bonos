@@ -1,5 +1,5 @@
 <?php
-// created: 2017-06-01 09:50:14
+// created: 2017-06-02 12:22:58
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Fecha de Creación',
@@ -144,4 +144,7 @@ $mod_strings = array (
   'LBL_SYNCED_RECURRING_MSG' => 'Esta convocatoria se originó en otro sistema y se sincronizan con el Sugar. Para realizar cambios, vaya a la reunión original en el otro sistema. Los cambios realizados en el otro sistema se puede sincronizar con este registro.',
   'LBL_RELATED_TO' => 'Relacionado con:',
   'LBL_MEETINGS_ACCOUNTS_1_FROM_ACCOUNTS_TITLE' => 'Alumnos',
+  'LBL_BONO_BONOS_BONOS_ID' => 'Bono (relacionado  ID)',
+  'LBL_BONO' => 'Bono',
+  'LBL_MEETINGS_BONOS_BONOS_1_FROM_BONOS_BONOS_TITLE' => 'Bonos',
 );

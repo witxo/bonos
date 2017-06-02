@@ -78,6 +78,7 @@ function formSubmitCheck(){ldelim}if(check_form(\'EditView\')){ldelim}document.E
           'panelDefault' => 'expanded',
         ),
       ),
+      'syncDetailEditViews' => true,
     ),
     'panels' => 
     array (
@@ -142,6 +143,15 @@ function formSubmitCheck(){ldelim}if(check_form(\'EditView\')){ldelim}document.E
         array (
           0 => 
           array (
+            'name' => 'bono_c',
+            'studio' => 'visible',
+            'label' => 'LBL_BONO',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
             'name' => 'duration',
             'customCode' => '
                 @@FIELD@@
@@ -161,7 +171,7 @@ function formSubmitCheck(){ldelim}if(check_form(\'EditView\')){ldelim}document.E
             'customCodeReadOnly' => '{$fields.duration_hours.value}{$MOD.LBL_HOURS_ABBREV} {$fields.duration_minutes.value}{$MOD.LBL_MINSS_ABBREV} ',
           ),
         ),
-        4 => 
+        5 => 
         array (
           0 => 
           array (
@@ -170,13 +180,17 @@ function formSubmitCheck(){ldelim}if(check_form(\'EditView\')){ldelim}document.E
             'label' => 'LBL_REMINDER',
           ),
         ),
-        5 => 
+        6 => 
         array (
           0 => 
           array (
             'name' => 'description',
             'comment' => 'Full text of the note',
             'label' => 'LBL_DESCRIPTION',
+          ),
+          1 => 
+          array (
+            'name' => 'meetings_bonos_bonos_1_name',
           ),
         ),
       ),

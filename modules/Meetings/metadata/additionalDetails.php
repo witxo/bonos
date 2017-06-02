@@ -37,6 +37,8 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 
 function additionalDetailsMeeting($fields) {
+  
+  	
 	static $mod_strings;
 	if(empty($mod_strings)) {
 		global $current_language;
@@ -79,6 +81,29 @@ function additionalDetailsMeeting($fields) {
 		if(strlen($fields['DESCRIPTION']) > 300) $overlib_string .= '...';
 		$overlib_string .= '<br>';
 	}
+  
+  
+  		$db = $GLOBALS['db'];
+ 
+    $query = "SELECT * FROM `meetings_accounts_1_c` WHERE meetings_accounts_1meetings_ida = '". $fields['ID']."'";
+  
+    $result = $db->query($query);
+
+  	$cabecera = 0;
+  while ( $row = $db->fetchByAssoc($result) ) {
+    
+    if ($cabecera == 0)
+    {
+       $overlib_string .= '<br><b>Alumnos:</b><br>';
+      $cabecera = 1;
+    }
+    $GLOBALS['log']->fatal($row['meetings_accounts_1accounts_idb']); 
+     $AccountBean = BeanFactory::getBean('Accounts', $row['meetings_accounts_1accounts_idb']);
+	
+    $overlib_string .= '<b>'. "<a href='index.php?module=Accounts&action=DetailView&record=".$AccountBean->id."'>" . $AccountBean->name . "</a>". '</b> ';
+    $overlib_string .= '<br>';
+}
+  
 
 	
 	$editLink = "index.php?action=EditView&module=Meetings&record={$fields['ID']}"; 
